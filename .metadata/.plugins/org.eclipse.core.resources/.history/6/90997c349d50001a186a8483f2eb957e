@@ -1,0 +1,32 @@
+package com.example.demo.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.demo.model.Person;
+import com.example.demo.model.Student;
+
+@Controller
+public class MainController {
+	private static List<Student> students = new ArrayList<Student>();
+	 
+    static {
+        students.add(new Student(1, "Gates",10));
+        students.add(new Student(2, "Jobs",8));
+        students.add(new Student(3, "Jobs",7));
+    }
+ 
+    @RequestMapping(value = { "/studentList" }, method = RequestMethod.GET)
+    public String studentList(Model model) {
+ 
+        model.addAttribute("students", students);
+ 
+        return "studentList";
+    }
+}

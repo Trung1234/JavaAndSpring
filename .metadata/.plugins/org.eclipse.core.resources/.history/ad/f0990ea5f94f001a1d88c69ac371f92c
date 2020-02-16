@@ -1,0 +1,25 @@
+package com.example.demo.model;
+
+public class Student {
+	private int id;
+	private String name;
+	private int mark;
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setName(string name) {
+		this.name = name;
+	}
+	public string getName() {
+		return name;
+	}
+	public void setMark(string mark) {
+		this.mark = mark;
+	}
+	public int getMark() {
+		return mark;
+	}
+}

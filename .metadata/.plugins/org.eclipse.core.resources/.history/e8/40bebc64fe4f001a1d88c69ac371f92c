@@ -1,0 +1,23 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.example.demo.model.Student;
+
+@Controller
+public class StudentController {
+	@GetMapping(value="/GetStudents")
+	public ModelAndView getStudentList() {
+		List<Student> students = new ArrayList<>();
+		students.add(new Student(1, "Trung",8));
+		students.add(new Student(2, "Huy",8));
+		students.add(new Student(3, "Tu",9));
+		ModelAndView model = new ModelAndView("index","listStudent",students);
+		return model;
+	}
+}
