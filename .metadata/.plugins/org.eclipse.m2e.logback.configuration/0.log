@@ -799,3 +799,334 @@
 2020-02-16 16:17:50,988 [Worker-40: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-02-16 16:17:50,990 [Worker-40: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-02-16 16:17:50,994 [Worker-40: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 08:20:26,091 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-02-17 08:27:30,279 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-02-17 08:27:34,316 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:StudentManagement:0.0.1-SNAPSHOT @ C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\pom.xml.
+2020-02-17 08:27:35,700 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.2.4.RELEASE/spring-boot-starter-thymeleaf-2.2.4.RELEASE.pom
+2020-02-17 08:27:35,925 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.2.4.RELEASE/spring-boot-starter-thymeleaf-2.2.4.RELEASE.pom
+2020-02-17 08:27:36,134 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.pom
+2020-02-17 08:27:36,361 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.pom
+2020-02-17 08:27:36,555 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.pom
+2020-02-17 08:27:36,767 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.pom
+2020-02-17 08:27:36,969 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.pom
+2020-02-17 08:27:37,182 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.pom
+2020-02-17 08:27:37,383 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom
+2020-02-17 08:27:37,593 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom
+2020-02-17 08:27:37,799 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.pom
+2020-02-17 08:27:37,995 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.pom
+2020-02-17 08:27:38,195 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ognl/ognl/3.1.12/ognl-3.1.12.pom
+2020-02-17 08:27:38,403 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ognl/ognl/3.1.12/ognl-3.1.12.pom
+2020-02-17 08:27:38,612 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
+2020-02-17 08:27:38,809 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
+2020-02-17 08:27:39,876 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.2.4.RELEASE/spring-boot-starter-thymeleaf-2.2.4.RELEASE.jar
+2020-02-17 08:27:40,061 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.2.4.RELEASE/spring-boot-starter-thymeleaf-2.2.4.RELEASE.jar
+2020-02-17 08:27:40,232 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar
+2020-02-17 08:27:40,766 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar
+2020-02-17 08:27:40,935 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar
+2020-02-17 08:27:42,306 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar
+2020-02-17 08:27:42,476 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar
+2020-02-17 08:27:43,014 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar
+2020-02-17 08:27:43,188 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar
+2020-02-17 08:27:43,556 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar
+2020-02-17 08:27:43,726 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar
+2020-02-17 08:27:44,016 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar
+2020-02-17 08:27:47,137 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:27:47,141 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 08:27:47,170 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 08:27:47,184 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:27:47,184 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 08:27:47,306 [Worker-7: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StudentManagement/src/main/java
+2020-02-17 08:27:47,307 [Worker-7: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StudentManagement/src/main/resources
+2020-02-17 08:27:47,370 [Worker-7: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StudentManagement/src/main/resources
+2020-02-17 08:27:47,461 [Worker-7: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StudentManagement/src/test/java
+2020-02-17 08:27:47,859 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.2.4.RELEASE/spring-boot-starter-thymeleaf-2.2.4.RELEASE-sources.jar
+2020-02-17 08:27:48,067 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/2.2.4.RELEASE/spring-boot-starter-thymeleaf-2.2.4.RELEASE-sources.jar
+2020-02-17 08:27:48,154 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-thymeleaf:2.2.4.RELEASE
+2020-02-17 08:27:48,915 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE-sources.jar
+2020-02-17 08:27:49,725 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE-sources.jar
+2020-02-17 08:27:49,845 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE
+2020-02-17 08:27:50,424 [Worker-7: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 20 sec
+2020-02-17 08:27:50,626 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE-sources.jar
+2020-02-17 08:27:50,725 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:27:50,728 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 08:27:50,731 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 08:27:50,745 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:27:50,745 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 08:27:51,159 [Worker-14: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 08:27:51,160 [Worker-14: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 08:27:52,252 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE-sources.jar
+2020-02-17 08:27:52,394 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.thymeleaf:thymeleaf:3.0.11.RELEASE
+2020-02-17 08:27:53,139 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE-sources.jar
+2020-02-17 08:27:54,002 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE-sources.jar
+2020-02-17 08:27:54,077 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.attoparser:attoparser:2.0.5.RELEASE
+2020-02-17 08:27:54,799 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE-sources.jar
+2020-02-17 08:27:55,508 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE-sources.jar
+2020-02-17 08:27:55,590 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.unbescape:unbescape:1.1.6.RELEASE
+2020-02-17 08:27:56,349 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE-sources.jar
+2020-02-17 08:27:56,779 [Worker-11: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE-sources.jar
+2020-02-17 08:27:56,929 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE
+2020-02-17 08:27:56,936 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.thymeleaf:thymeleaf:3.0.11.RELEASE
+2020-02-17 08:27:56,942 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.attoparser:attoparser:2.0.5.RELEASE
+2020-02-17 08:27:56,949 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.unbescape:unbescape:1.1.6.RELEASE
+2020-02-17 08:27:56,956 [Worker-11: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE
+2020-02-17 08:27:57,772 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:27:57,773 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 08:27:57,773 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 08:27:57,774 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:27:57,774 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 08:28:16,507 [Worker-11: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:28:16,508 [Worker-11: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 08:28:16,510 [Worker-11: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 08:28:16,512 [Worker-11: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:28:16,512 [Worker-11: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 08:57:44,461 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:StudentManagement:0.0.1-SNAPSHOT @ C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\pom.xml.
+2020-02-17 08:57:45,587 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-groovy-templates/2.2.4.RELEASE/spring-boot-starter-groovy-templates-2.2.4.RELEASE.pom
+2020-02-17 08:57:45,801 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-groovy-templates/2.2.4.RELEASE/spring-boot-starter-groovy-templates-2.2.4.RELEASE.pom
+2020-02-17 08:57:46,032 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-templates/2.5.9/groovy-templates-2.5.9.pom
+2020-02-17 08:57:46,417 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-templates/2.5.9/groovy-templates-2.5.9.pom
+2020-02-17 08:57:46,615 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.5.9/groovy-2.5.9.pom
+2020-02-17 08:57:46,811 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.5.9/groovy-2.5.9.pom
+2020-02-17 08:57:47,013 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.5.9/groovy-xml-2.5.9.pom
+2020-02-17 08:57:47,206 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.5.9/groovy-xml-2.5.9.pom
+2020-02-17 08:57:47,487 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-groovy-templates/2.2.4.RELEASE/spring-boot-starter-groovy-templates-2.2.4.RELEASE.jar
+2020-02-17 08:57:47,715 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-groovy-templates/2.2.4.RELEASE/spring-boot-starter-groovy-templates-2.2.4.RELEASE.jar
+2020-02-17 08:57:47,900 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-templates/2.5.9/groovy-templates-2.5.9.jar
+2020-02-17 08:57:48,270 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-templates/2.5.9/groovy-templates-2.5.9.jar
+2020-02-17 08:57:48,442 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.5.9/groovy-2.5.9.jar
+2020-02-17 08:57:59,030 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.5.9/groovy-2.5.9.jar
+2020-02-17 08:57:59,202 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.5.9/groovy-xml-2.5.9.jar
+2020-02-17 08:57:59,778 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.5.9/groovy-xml-2.5.9.jar
+2020-02-17 08:58:00,472 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:58:00,475 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 08:58:00,476 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 08:58:00,478 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:58:00,478 [Worker-24: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 08:58:01,549 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:58:01,551 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 08:58:01,564 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 08:58:01,650 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:58:01,651 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 08:58:02,067 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-groovy-templates/2.2.4.RELEASE/spring-boot-starter-groovy-templates-2.2.4.RELEASE-sources.jar
+2020-02-17 08:58:02,419 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-groovy-templates/2.2.4.RELEASE/spring-boot-starter-groovy-templates-2.2.4.RELEASE-sources.jar
+2020-02-17 08:58:02,723 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-groovy-templates:2.2.4.RELEASE
+2020-02-17 08:58:03,475 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-templates/2.5.9/groovy-templates-2.5.9-sources.jar
+2020-02-17 08:58:04,003 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-templates/2.5.9/groovy-templates-2.5.9-sources.jar
+2020-02-17 08:58:04,077 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.codehaus.groovy:groovy-templates:2.5.9
+2020-02-17 08:58:04,821 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.5.9/groovy-2.5.9-sources.jar
+2020-02-17 08:58:07,115 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.5.9/groovy-2.5.9-sources.jar
+2020-02-17 08:58:07,198 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.codehaus.groovy:groovy:2.5.9
+2020-02-17 08:58:07,919 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.5.9/groovy-xml-2.5.9-sources.jar
+2020-02-17 08:58:08,791 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.5.9/groovy-xml-2.5.9-sources.jar
+2020-02-17 08:58:08,917 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.codehaus.groovy:groovy-xml:2.5.9
+2020-02-17 08:58:08,931 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-groovy-templates:2.2.4.RELEASE
+2020-02-17 08:58:08,945 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.codehaus.groovy:groovy-templates:2.5.9
+2020-02-17 08:58:08,959 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.codehaus.groovy:groovy:2.5.9
+2020-02-17 08:58:08,967 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.codehaus.groovy:groovy-xml:2.5.9
+2020-02-17 08:58:09,364 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:58:09,364 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 08:58:09,364 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 08:58:09,366 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 08:58:09,367 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:13:21,088 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:13:21,089 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:13:21,089 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:13:21,093 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:13:21,093 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:14:53,512 [Worker-25: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:14:53,512 [Worker-25: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:15:02,849 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:15:02,850 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:15:02,851 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-02-17 09:15:02,853 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:15:02,853 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:15:25,673 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:15:25,674 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:15:25,674 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:15:25,679 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:15:25,680 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:15:49,705 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:15:49,706 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:15:49,706 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:15:49,708 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:15:49,708 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:16:03,464 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:16:03,464 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:16:03,464 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:16:03,475 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:16:03,476 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:21:03,387 [Worker-43: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:21:03,387 [Worker-43: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:21:13,095 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:21:13,097 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:21:13,099 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-02-17 09:21:13,101 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:21:13,101 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:21:45,124 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:StudentManagement:0.0.1-SNAPSHOT @ C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\pom.xml.
+2020-02-17 09:21:46,193 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.30/tomcat-embed-jasper-9.0.30.pom
+2020-02-17 09:21:46,361 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.30/tomcat-embed-jasper-9.0.30.pom
+2020-02-17 09:21:46,534 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0.pom
+2020-02-17 09:21:46,704 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0.pom
+2020-02-17 09:21:46,878 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.pom
+2020-02-17 09:21:47,047 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.pom
+2020-02-17 09:21:47,329 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.30/tomcat-embed-jasper-9.0.30.jar
+2020-02-17 09:21:48,460 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.30/tomcat-embed-jasper-9.0.30.jar
+2020-02-17 09:21:48,618 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/9.0.30/tomcat-annotations-api-9.0.30.jar
+2020-02-17 09:21:48,869 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/9.0.30/tomcat-annotations-api-9.0.30.jar
+2020-02-17 09:21:49,055 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0.jar
+2020-02-17 09:21:53,062 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0.jar
+2020-02-17 09:21:53,220 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.jar
+2020-02-17 09:21:54,248 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.jar
+2020-02-17 09:21:54,942 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:21:54,946 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:21:54,962 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-02-17 09:21:54,978 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:21:54,979 [Worker-43: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:21:56,198 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:21:56,202 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:21:56,204 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-02-17 09:21:56,310 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:21:56,311 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:21:56,863 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.30/tomcat-embed-jasper-9.0.30-sources.jar
+2020-02-17 09:21:57,815 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.30/tomcat-embed-jasper-9.0.30-sources.jar
+2020-02-17 09:21:57,980 [Worker-46: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat.embed:tomcat-embed-jasper:9.0.30
+2020-02-17 09:21:58,655 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/9.0.30/tomcat-annotations-api-9.0.30-sources.jar
+2020-02-17 09:21:59,096 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/9.0.30/tomcat-annotations-api-9.0.30-sources.jar
+2020-02-17 09:21:59,178 [Worker-46: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat:tomcat-annotations-api:9.0.30
+2020-02-17 09:22:00,563 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0-sources.jar
+2020-02-17 09:22:02,448 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0-sources.jar
+2020-02-17 09:22:02,542 [Worker-46: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.eclipse.jdt:ecj:3.18.0
+2020-02-17 09:22:03,226 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2-sources.jar
+2020-02-17 09:22:04,199 [Worker-46: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/servlet/jstl/1.2/jstl-1.2-sources.jar
+2020-02-17 09:22:04,271 [Worker-46: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for javax.servlet:jstl:1.2
+2020-02-17 09:22:04,689 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:22:04,689 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:22:04,692 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:22:04,693 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:22:04,693 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:23:13,970 [Worker-27: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:23:13,970 [Worker-27: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:23:22,841 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:23:22,844 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:23:22,848 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-02-17 09:23:22,850 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:23:22,851 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:23:27,353 [Worker-46: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:23:27,354 [Worker-46: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:23:27,354 [Worker-46: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:23:27,358 [Worker-46: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:23:27,358 [Worker-46: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:28:58,618 [Worker-46: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:28:58,619 [Worker-46: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:29:07,345 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:29:07,348 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:29:07,352 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-02-17 09:29:07,355 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:29:07,356 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:29:10,918 [Worker-49: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:29:10,918 [Worker-49: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:29:10,918 [Worker-49: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:29:10,922 [Worker-49: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:29:10,922 [Worker-49: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:38:15,685 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:StudentManager:0.0.1-SNAPSHOT @ C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManager\pom.xml.
+2020-02-17 09:38:16,672 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-mustache/2.2.4.RELEASE/spring-boot-starter-mustache-2.2.4.RELEASE.pom
+2020-02-17 09:38:16,845 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-mustache/2.2.4.RELEASE/spring-boot-starter-mustache-2.2.4.RELEASE.pom
+2020-02-17 09:38:17,028 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/samskivert/jmustache/1.15/jmustache-1.15.pom
+2020-02-17 09:38:17,200 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/samskivert/jmustache/1.15/jmustache-1.15.pom
+2020-02-17 09:38:17,463 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-mustache/2.2.4.RELEASE/spring-boot-starter-mustache-2.2.4.RELEASE.jar
+2020-02-17 09:38:17,638 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-mustache/2.2.4.RELEASE/spring-boot-starter-mustache-2.2.4.RELEASE.jar
+2020-02-17 09:38:17,800 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/samskivert/jmustache/1.15/jmustache-1.15.jar
+2020-02-17 09:38:18,292 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/samskivert/jmustache/1.15/jmustache-1.15.jar
+2020-02-17 09:38:18,813 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StudentManager/src/main/java
+2020-02-17 09:38:18,813 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StudentManager/src/main/resources
+2020-02-17 09:38:18,823 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StudentManager/src/main/resources
+2020-02-17 09:38:18,837 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StudentManager/src/test/java
+2020-02-17 09:38:19,268 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2020-02-17 09:38:19,269 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-02-17 09:38:19,673 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:StudentManager:0.0.1-SNAPSHOT @ C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManager\pom.xml.
+2020-02-17 09:38:20,134 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StudentManager/src/main/java
+2020-02-17 09:38:20,134 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StudentManager/src/main/resources
+2020-02-17 09:38:20,136 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StudentManager/src/main/resources
+2020-02-17 09:38:20,140 [Worker-49: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StudentManager/src/test/java
+2020-02-17 09:38:20,287 [Worker-49: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2020-02-17 09:38:20,822 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-mustache/2.2.4.RELEASE/spring-boot-starter-mustache-2.2.4.RELEASE-sources.jar
+2020-02-17 09:38:20,892 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:38:20,893 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:38:20,894 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:38:20,896 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:38:20,896 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManager\src\test\resources
+2020-02-17 09:38:21,178 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-mustache/2.2.4.RELEASE/spring-boot-starter-mustache-2.2.4.RELEASE-sources.jar
+2020-02-17 09:38:21,247 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-mustache:2.2.4.RELEASE
+2020-02-17 09:38:21,924 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/samskivert/jmustache/1.15/jmustache-1.15-sources.jar
+2020-02-17 09:38:22,330 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/samskivert/jmustache/1.15/jmustache-1.15-sources.jar
+2020-02-17 09:38:22,436 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.samskivert:jmustache:1.15
+2020-02-17 09:38:22,443 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-mustache:2.2.4.RELEASE
+2020-02-17 09:38:22,451 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.samskivert:jmustache:1.15
+2020-02-17 09:38:22,458 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-mustache:2.2.4.RELEASE
+2020-02-17 09:38:22,470 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.samskivert:jmustache:1.15
+2020-02-17 09:38:22,479 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-mustache:2.2.4.RELEASE
+2020-02-17 09:38:22,503 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.samskivert:jmustache:1.15
+2020-02-17 09:38:22,760 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:38:22,760 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:38:22,760 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:38:22,761 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:38:22,761 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManager\src\test\resources
+2020-02-17 09:41:12,280 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:41:12,280 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:41:12,281 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:41:12,282 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:41:12,282 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:41:50,544 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:41:50,545 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:41:50,545 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:41:50,546 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:41:50,546 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:42:08,815 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:42:08,816 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:42:08,816 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:42:08,817 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:42:08,817 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:42:49,913 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:42:49,913 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:42:49,913 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:42:49,915 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:42:49,915 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:43:04,888 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:43:04,888 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:43:04,888 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:43:04,890 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:43:04,890 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:43:16,898 [Worker-49: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:43:16,899 [Worker-49: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:43:29,714 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:43:29,715 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:43:29,716 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 09:43:29,718 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:43:29,718 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:43:34,543 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:43:34,543 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:43:34,544 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:43:34,546 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:43:34,546 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:44:28,358 [Worker-52: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:44:28,358 [Worker-52: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:44:36,733 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:44:36,738 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:44:36,739 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 09:44:36,741 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:44:36,741 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:44:47,971 [Worker-51: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:44:47,972 [Worker-51: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:44:47,974 [Worker-51: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 09:44:47,975 [Worker-51: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:44:47,975 [Worker-51: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:45:52,934 [Worker-50: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement
+2020-02-17 09:45:52,934 [Worker-50: Launching Executing install in C__Users_TrungNT-D5_Desktop_JavaSpring_StudentManagement] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-02-17 09:45:58,604 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:45:58,605 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:45:58,606 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-02-17 09:45:58,608 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:45:58,608 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\TrungNT-D5\Desktop\JavaSpring\StudentManagement\src\test\resources
+2020-02-17 09:46:04,306 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-17 09:46:04,307 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-17 09:46:04,309 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-17 09:46:04,310 [Worker-48: Launching StudentManagement - StudentManagementApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

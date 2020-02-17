@@ -21,11 +21,18 @@ public class MainController {
         students.add(new Student(3, "Jobs",7));
     }
  
-    @RequestMapping(value = { "/studentList" }, method = RequestMethod.GET)
-    public String studentList(Model model) {
+//    @RequestMapping(value = { "/studentList" }, method = RequestMethod.GET)
+//    public String studentList(Model model) {
+// 
+//        model.addAttribute("students", students);
+// 
+//        return "studentList";
+//    }
+    @RequestMapping(value = { "/index" }, method = RequestMethod.GET)
+    public String index(Model model) {
  
         model.addAttribute("students", students);
  
-        return "studentList";
+        return "index";
     }
 }
