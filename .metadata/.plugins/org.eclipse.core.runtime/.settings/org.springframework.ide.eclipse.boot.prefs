@@ -1,7 +1,9 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.freemarker=2
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.thymeleaf=2
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.freemarker=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.groovy-templates=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mustache=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.thymeleaf=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=3
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=StudentManager
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.2.4.RELEASE
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot

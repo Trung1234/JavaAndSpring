@@ -2087,3 +2087,57 @@ Binding(CTRL+R,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:38:22.672
 !MESSAGE executing callback sts4.classpath.fYUVUjkg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:51:43.513
+!MESSAGE Preparing classpath changed notification StudentManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:51:43.556
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:51:43.561
+!MESSAGE classpath=101 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:51:43.622
+!MESSAGE buffering callback sts4.classpath.fYUVUjkg StudentManager false 101
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:51:43.628
+!MESSAGE executing callback sts4.classpath.fYUVUjkg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 09:51:43.632
+!MESSAGE executing callback sts4.classpath.fYUVUjkg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:09.097
+!MESSAGE Preparing classpath changed notification StudentManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:09.098
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:09.103
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:09.114
+!MESSAGE buffering callback sts4.classpath.fYUVUjkg StudentManager false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:09.117
+!MESSAGE executing callback sts4.classpath.fYUVUjkg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:09.139
+!MESSAGE executing callback sts4.classpath.fYUVUjkg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:32.106
+!MESSAGE Preparing classpath changed notification StudentManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:32.107
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:32.112
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:32.121
+!MESSAGE buffering callback sts4.classpath.fYUVUjkg StudentManager false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:32.126
+!MESSAGE executing callback sts4.classpath.fYUVUjkg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-17 10:10:32.148
+!MESSAGE executing callback sts4.classpath.fYUVUjkg SUCCESS [done]
