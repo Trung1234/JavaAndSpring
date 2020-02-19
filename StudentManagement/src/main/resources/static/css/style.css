@@ -13,3 +13,7 @@ table {
 table th, table td {
     padding: 5px;
 }
+.error-message{
+	color: red;
+	font-style: italic;
+}

@@ -16,13 +16,20 @@
             	<th>Id</th>
             	<th>Name</th>
                <th>Mark</th>
+               <th></th>
             </tr>
             <tr th:each ="student : ${students}">
             	<td th:utext="${student.id}">...</td>
             	<td th:utext="${student.name}">...</td>
                <td th:utext="${student.mark}">...</td>
+               <td>
+               <a href="#">Update</a>|               
+               <a th:href="@{/deleteStudent(stid=${student.id})}">Delete</a>
+               </td>
             </tr>
          </table>
+         
+         <p class="error-message" th:utext="${error}"></p>
 </div>
          
 </body>
