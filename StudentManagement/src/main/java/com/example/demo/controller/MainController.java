@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,12 +34,37 @@ public class MainController {
 		}
 		return "students";
 	}
+	@RequestMapping(value = { "/updateStudent" }, method = RequestMethod.GET)
+	public String updateStudent(@RequestParam("stid") int id,Model model) {
+		Student student = studentDao.getStudentById(id);
+		model.addAttribute("student",student);
+		return "studentForm";
+	}
 	
+	
+	@RequestMapping(value = { "/createStudent" }, method = RequestMethod.GET)
+	public String getStudent(Model model) {
+		model.addAttribute("student",new Student());
+		return "studentForm";
+	}
+	
+	@RequestMapping(value = { "/createStudent" }, method = RequestMethod.POST)
+	public String createStudent(@ModelAttribute("student") Student st,
+							Model model) {
+		try {
+			studentDao.addStudent(st);
+		}
+		catch (Exception e) {
+			int error =0;
+			model.addAttribute("error", "Fail to create student : " + error);
+		}
+		return "redirect:/studentList";
+	}
 	@RequestMapping(value = { "/abc" }, method = RequestMethod.GET)
 	public String abcd(Model model) {
 		return "NewFile";
 	}
-
+	
 	//deteteStudent?stid=10
 	@RequestMapping(value = { "/deleteStudent" }, method = RequestMethod.GET)
 	public String deleteStudent(@RequestParam("stid") int id, Model model) {

@@ -23,7 +23,7 @@
             	<td th:utext="${student.name}">...</td>
                <td th:utext="${student.mark}">...</td>
                <td>
-               <a href="#">Update</a>|               
+               <a th:href="@{/updateStudent(stid=${student.id})}">Update</a>|               
                <a th:href="@{/deleteStudent(stid=${student.id})}">Delete</a>
                </td>
             </tr>
