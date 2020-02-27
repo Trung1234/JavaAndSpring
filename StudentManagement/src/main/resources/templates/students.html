@@ -16,6 +16,7 @@
             	<th>Id</th>
             	<th>Name</th>
                <th>Mark</th>
+               <th>Course</th>
                <th></th>
             </tr>
             <tr th:each ="student : ${students}">
@@ -23,6 +24,13 @@
             	<td th:utext="${student.name}">...</td>
                <td th:utext="${student.mark}">...</td>
                <td>
+               	<select >
+               		<option th:each = "c:${student.courseregist}"
+               		th:text=${c.course.name}></option>
+               	</select>
+               </td>
+               <td>
+               <a th:href="@{/viewStudent(stid=${student.id})}">Detail</a>| 
                <a th:href="@{/updateStudent(stid=${student.id})}">Update</a>|               
                <a th:href="@{/deleteStudent(stid=${student.id})}">Delete</a>
                </td>

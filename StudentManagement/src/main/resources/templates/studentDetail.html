@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html
+ xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8" />
+      <title>Detail</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div>
+	<table border="1">
+            <tr>
+            	<th>Course</th>
+            </tr>
+            <tr th:each ="c : ${courseset}">
+            	<td th:utext="${c.course.name}">...</td>
+            </tr>
+         </table>
+</div>
+         
+</body>
+</html>

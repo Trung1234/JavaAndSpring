@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.dao.StudentDao;
-import com.example.demo.model.Student;
+import com.example.demo.models.Student;
 
 @Controller
 public class MainController {
@@ -41,6 +41,12 @@ public class MainController {
 		return "studentForm";
 	}
 	
+	@RequestMapping(value = { "/viewStudent" }, method = RequestMethod.GET)
+	public String viewStudent(@RequestParam("stid") int id,Model model) {
+		Student student = studentDao.getStudentById(id);
+		model.addAttribute("courseset",student.getCourseregist());
+		return "studentDetail";
+	}
 	
 	@RequestMapping(value = { "/createStudent" }, method = RequestMethod.GET)
 	public String getStudent(Model model) {
