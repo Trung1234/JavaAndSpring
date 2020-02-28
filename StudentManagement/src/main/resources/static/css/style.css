@@ -17,3 +17,10 @@ table th, table td {
 	color: red;
 	font-style: italic;
 }
+.hide{
+	display: none;
+}
+
+.show{
+	display: inline;
+}

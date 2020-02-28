@@ -12,12 +12,10 @@
 <body>
 <div>
 	<form th:action="@{/createStudent}" th:object=${student} method="post">
-  <label >ID:</label><br>
-  <input th:field="*{id}"><br>
+  <input th:if="*{id == 0}" class="hide" th:field="*{id}"><br>
+  <input type="hidden" th:unless="*{id == 0}" class="show" th:field="*{id}"><br>
   <label >Name:</label><br>
   <input th:field="*{name}"><br>
-  <label >Class:</label><br>
-  <input th:field="*{class_}"><br>
   <label for="">Mark:</label><br>
   <input th:field="*{mark}"><br><br>
   <input type="submit" value="Submit">

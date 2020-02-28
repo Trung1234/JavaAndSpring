@@ -19,18 +19,18 @@ public class MainController {
 	private List<Student> students = new ArrayList<Student>();
 	@Autowired
 	private StudentDao studentDao;
-//    static {
-//        students.add(new Student(1, "Gates",10,"10A"));
-//        students.add(new Student(2, "Jobs",8,"10A"));
-//        students.add(new Student(3, "Jobs",7,"10A"));
-//    }
+
 
 	@RequestMapping(value = { "/studentList" }, method = RequestMethod.GET)
 	public String studentList(Model model, @RequestParam(required = false) String error) {
 		students = studentDao.getAllStudents();
 		model.addAttribute("students", students);
 		if(error != null) {
-			model.addAttribute("error", "Fail to delete student id: " + error);
+			if(error != "0") {
+				model.addAttribute("error", "Delete student successfully ");
+			}else {
+				model.addAttribute("error", "Some error happens ");
+			}
 		}
 		return "students";
 	}
@@ -62,7 +62,7 @@ public class MainController {
 		}
 		catch (Exception e) {
 			int error =0;
-			model.addAttribute("error", "Fail to create student : " + error);
+			model.addAttribute("error", error);
 		}
 		return "redirect:/studentList";
 	}
