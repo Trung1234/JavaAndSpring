@@ -27,8 +27,8 @@
                <td th:utext="${student.mark}">...</td>
                <td>
                	<select >
-               		<option th:each = "c:${student.courseregist}"
-               		th:text=${c.course.name}></option>
+               		<option th:each = "c:${student.courses}"
+               		th:text=${c.name}></option>
                	</select>
                </td>
                <td>

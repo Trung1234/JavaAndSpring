@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html
- xmlns="http://www.w3.org/1999/xhtml" 
-    xmlns:th="http://www.thymeleaf.org" 
-    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 <meta charset="UTF-8" />
-      <title>Student From</title>
-      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+<title>Student From</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
 </head>
 <body>
-<div>
-	<form th:action="@{/createStudent}" th:object=${student} method="post">
-  <input th:if="*{id == 0}" class="hide" th:field="*{id}"><br>
-  <input type="hidden" th:unless="*{id == 0}" class="show" th:field="*{id}"><br>
-  <label >Name:</label><br>
-  <input th:field="*{name}"><br>
-  <label for="">Mark:</label><br>
-  <input th:field="*{mark}"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-</div>
-         
+	<div>
+		<form th:action="@{/createStudent}" th:object=${student} method="post">
+			<input th:if="*{id == 0}" class="hide" th:field="*{id}"><br>
+			<input type="hidden" th:unless="*{id == 0}" class="show"
+				th:field="*{id}"><br> <label>Name:</label><br> <input
+				th:field="*{name}"><br> <label for="">Mark:</label><br>
+			<input th:field="*{mark}"><br>
+			<table >
+				<tr>
+				<td>Course</td>
+				<td>
+				<th:block th:each="course : ${courses}">
+						<input th:checked="${student.id > 0 && student.courses.contains(course)} ? 'true' : 'false'" type="checkbox" name="course" th:value="${course.id}" />
+						<label th:text="${course.name}"></label>
+					</th:block>
+					</td>
+			</tr>
+			</table>
+			
+			<br> <input type="submit" value="Submit">
+		</form>
+	</div>
+
 </body>
 </html>
