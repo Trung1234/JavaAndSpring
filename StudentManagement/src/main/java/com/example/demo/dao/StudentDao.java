@@ -38,15 +38,18 @@ public class StudentDao {
 		return st;
 	}
 	
-	public void addStudent(Student student, String[] course) {
+	/*
+	 * public void addStudent(Student student, String[] course) {
+	 * 
+	 * Set<Course> stCourse = new HashSet<>(); for(String c : course) { Course cou =
+	 * couDao.getCourseById(Integer.parseInt(c)); cou.getStudents().add(student);
+	 * stCourse.add(cou); } student.setCourses(stCourse);
+	 * studentRepository.save(student); }
+	 */
+	
+	
+	public void addStudent(Student student) {
 
-		Set<Course> stCourse =  new HashSet<>();
-		for(String c : course) {
-			Course cou = couDao.getCourseById(Integer.parseInt(c));
-			cou.getStudents().add(student);
-			stCourse.add(cou);
-		}
-		student.setCourses(stCourse);
 		studentRepository.save(student);
 	}
 	public void deleteStudentById(int id) {

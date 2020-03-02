@@ -11,12 +11,15 @@
 <body>
 	<div>
 		<form th:action="@{/createStudent}" th:object=${student} method="post">
-			<input th:if="*{id == 0}" class="hide" th:field="*{id}"><br>
-			<input type="hidden" th:unless="*{id == 0}" class="show"
-				th:field="*{id}"><br> <label>Name:</label><br> <input
-				th:field="*{name}"><br> <label for="">Mark:</label><br>
+			<input type="hidden" th:field="*{id}"><br>
+
+				<label>Name:</label><br> 
+				<input th:field="*{name}"><br> 
+				<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+				<label for="">Mark:</label><br>
 			<input th:field="*{mark}"><br>
-			<table >
+			<span th:if="${#fields.hasErrors('mark')}" th:errors="*{mark}">mark Error</span>
+	<!-- 		<table >
 				<tr>
 				<td>Course</td>
 				<td>
@@ -27,7 +30,7 @@
 					</td>
 			</tr>
 			</table>
-			
+			 -->
 			<br> <input type="submit" value="Submit">
 		</form>
 	</div>

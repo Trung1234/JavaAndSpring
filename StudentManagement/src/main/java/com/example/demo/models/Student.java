@@ -17,6 +17,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Version;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity(name = "student")
 public class Student implements Serializable {
@@ -67,8 +71,15 @@ public class Student implements Serializable {
 	@Id
 	@Column(unique = true, nullable = false, precision = 3)
 	private int id;
+	
+	@NotNull
+	@Size(min=2, max=30)
 	@Column(nullable = false, length = 255)
 	private String name;
+	
+	@NotNull
+	@Min(1)
+	@Max(10)
 	@Column(precision = 3)
 	private int mark;
 
