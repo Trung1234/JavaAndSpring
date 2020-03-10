@@ -22,6 +22,7 @@ import com.example.demo.models.Student;
 @Controller
 public class MainController {
 	private List<Student> students = new ArrayList<Student>();
+	
 	@Autowired
 	private StudentDao studentDao;
 	@Autowired
@@ -30,6 +31,7 @@ public class MainController {
 	@RequestMapping(value = { "/studentList" }, method = RequestMethod.GET)
 	public String studentList(Model model, @RequestParam(required = false) String error) {
 		students = studentDao.getAllStudents();
+
 		model.addAttribute("students", students);
 		if(error != null) {
 			if(error != "0") {
@@ -51,44 +53,39 @@ public class MainController {
 		return "studentForm";
 	}
 	
-	@RequestMapping(value = { "/viewStudent" }, method = RequestMethod.GET)
-	public String viewStudent(@RequestParam("stid") int id,Model model) {
-		Student student = studentDao.getStudentById(id);
-		model.addAttribute("courseset",student.getCourses());
-		return "studentDetail";
-	}
-	
+	/*
+	 * @RequestMapping(value = { "/viewStudent" }, method = RequestMethod.GET)
+	 * public String viewStudent(@RequestParam("stid") int id,Model model) { Student
+	 * student = studentDao.getStudentById(id);
+	 * model.addAttribute("courseset",student.getCourses()); return "studentDetail";
+	 * }
+	 */
 	@RequestMapping(value = { "/createStudent" }, method = RequestMethod.GET)
 	public String getStudent(Model model) {		
 		List<Course> courses = courseDao.getAllCourses();
 		model.addAttribute("student",new Student());
-//		model.addAttribute("courses",courses);
+		model.addAttribute("courses",courses);
 		return "studentForm";
 	}
 	
-	/*
-	 * @RequestMapping(value = { "/createStudent" }, method = RequestMethod.POST)
-	 * public String createStudent(@ModelAttribute("student") Student st, String[]
-	 * course, Model model) { try { studentDao.addStudent(st,course); } catch
-	 * (Exception e) { int error =0; model.addAttribute("error", error); } return
-	 * "redirect:/studentList"; }
-	 */
 	
-	@RequestMapping(value = { "/createStudent" }, method = RequestMethod.POST)
-	public String createStudent(@ModelAttribute("student") @Valid Student st, BindingResult bindingResult,
-							Model model) {
-		try {
-			if (bindingResult.hasErrors()) {
-				return "studentForm";
-			}
-			studentDao.addStudent(st);
-		}
-		catch (Exception e) {
-			int error =0;
-			model.addAttribute("error", error);
-		}
-		return "redirect:/studentList";
-	}
+	  @RequestMapping(value = { "/createStudent" }, method = RequestMethod.POST)
+	  public String createStudent(@ModelAttribute("student") Student st, String[]
+	  course, Model model) 
+	  { 
+		  try 
+		  {
+			  studentDao.addStudent(st,course); 
+		  } catch (Exception e) 
+		  { 
+			  int error =0;
+			  model.addAttribute("error", error);
+			  }
+		  return"redirect:/studentList"; 
+	  }
+	 
+	
+
 
 	//deteteStudent?stid=10
 	@RequestMapping(value = { "/deleteStudent" }, method = RequestMethod.GET)

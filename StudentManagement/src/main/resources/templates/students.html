@@ -26,10 +26,10 @@
             	<td th:utext="${student.name}">...</td>
                <td th:utext="${student.mark}">...</td>
                <td>
-               	<select >
-               		<option th:each = "c:${student.courses}"
-               		th:text=${c.name}></option>
-               	</select>
+                	<select >
+               		<option th:each = "c:${student.courseregist}"
+               		th:text=${c.course.name}></option>
+               	</select> 
                </td>
                <td>
                <!-- <a th:href="@{/viewStudent(stid=${student.id})}">Detail</a>|  -->

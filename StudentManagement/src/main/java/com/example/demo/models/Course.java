@@ -3,12 +3,16 @@
 package com.example.demo.models;
 
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity(name="course")
 public class Course implements Serializable {
@@ -16,55 +20,17 @@ public class Course implements Serializable {
     /** Primary key. */
     protected static final String PK = "id";
 
-    /**
-     * The optimistic lock. Available via standard bean get/set operations.
-     */
-    @Version
-    @Column(name="LOCK_FLAG")
-    private Integer lockFlag;
-
-    /**
-     * Access method for the lockFlag property.
-     *
-     * @return the current value of the lockFlag property
-     */
-    public Integer getLockFlag() {
-        return lockFlag;
-    }
-
-    /**
-     * Sets the value of the lockFlag property.
-     *
-     * @param aLockFlag the new value of the lockFlag property
-     */
-    public void setLockFlag(Integer aLockFlag) {
-        lockFlag = aLockFlag;
-    }
-
     @Id
     @Column(unique=true, nullable=false, precision=3)
+    @GeneratedValue
     private int id;
     @Column(nullable=false, length=255)
     private String name;
-    
-    @ManyToMany(fetch = FetchType.LAZY,
-            cascade = {
-                CascadeType.PERSIST,
-                CascadeType.MERGE
-            }, mappedBy = "courses")
-    private Set<Student> students = new HashSet<>();
-    
-    
 
-    public Set<Student> getStudents() {
-		return students;
-	}
+    @OneToMany(mappedBy="course")
+    private Set<Courseregist> courseregist;
 
-	public void setStudents(Set<Student> students) {
-		this.students = students;
-	}
-
-	/** Default constructor. */
+    /** Default constructor. */
     public Course() {
         super();
     }
@@ -74,6 +40,7 @@ public class Course implements Serializable {
      *
      * @return the current value of id
      */
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
     }
@@ -103,6 +70,27 @@ public class Course implements Serializable {
      */
     public void setName(String aName) {
         name = aName;
+    }
+
+
+
+
+    /**
+     * Access method for courseregist.
+     *
+     * @return the current value of courseregist
+     */
+    public Set<Courseregist> getCourseregist() {
+        return courseregist;
+    }
+
+    /**
+     * Setter method for courseregist.
+     *
+     * @param aCourseregist the new value for courseregist
+     */
+    public void setCourseregist(Set<Courseregist> aCourseregist) {
+        courseregist = aCourseregist;
     }
 
     /**

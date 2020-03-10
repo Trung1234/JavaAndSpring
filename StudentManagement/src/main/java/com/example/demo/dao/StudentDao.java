@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.models.Course;
+import com.example.demo.models.Courseregist;
 import com.example.demo.models.Student;
 
 
@@ -18,6 +19,8 @@ import com.example.demo.models.Student;
 @Component
 public class StudentDao {
 
+	@Autowired
+	private CourseregistRepository courseregistRepository;
 	@Autowired
 	private StudentRepository studentRepository;
 	@Autowired
@@ -38,20 +41,27 @@ public class StudentDao {
 		return st;
 	}
 	
-	/*
-	 * public void addStudent(Student student, String[] course) {
-	 * 
-	 * Set<Course> stCourse = new HashSet<>(); for(String c : course) { Course cou =
-	 * couDao.getCourseById(Integer.parseInt(c)); cou.getStudents().add(student);
-	 * stCourse.add(cou); } student.setCourses(stCourse);
-	 * studentRepository.save(student); }
-	 */
 	
-	
-	public void addStudent(Student student) {
+	  public void addStudent(Student student, String[] course) {	
+		  
+		  studentRepository.saveAndFlush(student);
+		  
+		  for(String c : course) 
+		  {
+			  Courseregist cr = new Courseregist();
+			  Course cou =  couDao.getCourseById(Integer.parseInt(c)); 
+		  
+			  cr.setStudent(student);
+			  cr.setCourse(cou);
+			  courseregistRepository.save(cr);
+		  } 
+		  
+		  
+		  System.out.println("abc");
+		   
+	  }
+	 
 
-		studentRepository.save(student);
-	}
 	public void deleteStudentById(int id) {
 		Student student = studentRepository.findById(id).get();
 		studentRepository.delete(student);

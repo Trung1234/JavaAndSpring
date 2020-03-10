@@ -19,18 +19,19 @@
 				<label for="">Mark:</label><br>
 			<input th:field="*{mark}"><br>
 			<span th:if="${#fields.hasErrors('mark')}" th:errors="*{mark}">mark Error</span>
-	<!-- 		<table >
+	 		<table >
 				<tr>
 				<td>Course</td>
 				<td>
 				<th:block th:each="course : ${courses}">
-						<input th:checked="${student.id > 0 && student.courses.contains(course)} ? 'true' : 'false'" type="checkbox" name="course" th:value="${course.id}" />
+						<input th:checked="${student.id > 0 && student.course.contains(course)} ? 'true' : 'false'" 
+						type="checkbox" name="course" th:value="${course.id}" />
 						<label th:text="${course.name}"></label>
 					</th:block>
 					</td>
 			</tr>
 			</table>
-			 -->
+			 
 			<br> <input type="submit" value="Submit">
 		</form>
 	</div>

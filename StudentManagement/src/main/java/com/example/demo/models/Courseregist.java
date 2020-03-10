@@ -3,21 +3,19 @@
 package com.example.demo.models;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
-@Entity(name="student")
-public class Student implements Serializable {
+@Entity(name="courseregist")
+public class Courseregist implements Serializable {
 
     /** Primary key. */
     protected static final String PK = "id";
@@ -26,17 +24,15 @@ public class Student implements Serializable {
     @Column(unique=true, nullable=false, precision=3)
     @GeneratedValue
     private int id;
-    @Column(nullable=false, length=255)
-    private String name;
-    @Column(precision=3)
-    private int mark;
-    
-    @OneToMany(mappedBy="student")
-    private Set<Courseregist> courseregist;
-  
+    @ManyToOne(optional=false)
+    @JoinColumn(name="courseid", nullable=false)
+    private Course course;
+    @ManyToOne(optional=false)
+    @JoinColumn(name="studentid", nullable=false)
+    private Student student;
 
-	/** Default constructor. */
-    public Student() {
+    /** Default constructor. */
+    public Courseregist() {
         super();
     }
 
@@ -60,83 +56,55 @@ public class Student implements Serializable {
     }
 
     /**
-     * Access method for name.
+     * Access method for course.
      *
-     * @return the current value of name
+     * @return the current value of course
      */
-    public String getName() {
-        return name;
+    public Course getCourse() {
+        return course;
     }
 
     /**
-     * Setter method for name.
+     * Setter method for course.
      *
-     * @param aName the new value for name
+     * @param aCourse the new value for course
      */
-    public void setName(String aName) {
-        name = aName;
+    public void setCourse(Course aCourse) {
+        course = aCourse;
     }
 
     /**
-     * Access method for mark.
+     * Access method for student.
      *
-     * @return the current value of mark
+     * @return the current value of student
      */
-    public int getMark() {
-        return mark;
+    public Student getStudent() {
+        return student;
     }
 
     /**
-     * Setter method for mark.
+     * Setter method for student.
      *
-     * @param aMark the new value for mark
+     * @param aStudent the new value for student
      */
-    public void setMark(int aMark) {
-        mark = aMark;
-    }
-//    public List<Course> getCourses() {
-//		List<Course> lCourse = new ArrayList<Course>();
-//		for(Courseregist cr : courseregist) {
-//			lCourse.add(cr.getCourse());
-//		}
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-    
-    
-
-    /**
-     * Access method for courseregist.
-     *
-     * @return the current value of courseregist
-     */
-    public Set<Courseregist> getCourseregist() {
-        return courseregist;
+    public void setStudent(Student aStudent) {
+        student = aStudent;
     }
 
     /**
-     * Setter method for courseregist.
-     *
-     * @param aCourseregist the new value for courseregist
-     */
-    public void setCourseregist(Set<Courseregist> aCourseregist) {
-        courseregist = aCourseregist;
-    }
-
-    /**
-     * Compares the key for this instance with another Student.
+     * Compares the key for this instance with another Courseregist.
      *
      * @param other The object to compare to
-     * @return True if other object is instance of class Student and the key objects are equal
+     * @return True if other object is instance of class Courseregist and the key objects are equal
      */
     private boolean equalKeys(Object other) {
         if (this==other) {
             return true;
         }
-        if (!(other instanceof Student)) {
+        if (!(other instanceof Courseregist)) {
             return false;
         }
-        Student that = (Student) other;
+        Courseregist that = (Courseregist) other;
         if (this.getId() != that.getId()) {
             return false;
         }
@@ -144,15 +112,15 @@ public class Student implements Serializable {
     }
 
     /**
-     * Compares this instance with another Student.
+     * Compares this instance with another Courseregist.
      *
      * @param other The object to compare to
      * @return True if the objects are the same
      */
     @Override
     public boolean equals(Object other) {
-        if (!(other instanceof Student)) return false;
-        return this.equalKeys(other) && ((Student)other).equalKeys(this);
+        if (!(other instanceof Courseregist)) return false;
+        return this.equalKeys(other) && ((Courseregist)other).equalKeys(this);
     }
 
     /**
@@ -176,7 +144,7 @@ public class Student implements Serializable {
      */
     @Override
     public String toString() {
-        StringBuffer sb = new StringBuffer("[Student |");
+        StringBuffer sb = new StringBuffer("[Courseregist |");
         sb.append(" id=").append(getId());
         sb.append("]");
         return sb.toString();
