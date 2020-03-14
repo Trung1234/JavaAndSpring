@@ -8,5 +8,9 @@
 		</list>
 	</section>
 	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="no.esito.g9.ImportDBWizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="no.esito.g9.GCategory"/>
+		</list>
 	</section>
 </section>
