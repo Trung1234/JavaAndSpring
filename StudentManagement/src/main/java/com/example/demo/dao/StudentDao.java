@@ -45,7 +45,15 @@ public class StudentDao {
 	  public void addStudent(Student student, String[] course) {	
 		  
 		  studentRepository.saveAndFlush(student);
-		  
+		  if(student.getId()>0) {
+			  List<Courseregist> studentCourseregist = courseregistRepository.findAll();
+			  for(Courseregist studentCourse : studentCourseregist) {
+				  int stId = studentCourse.getStudent().getId();
+				  if(stId == student.getId()) {
+					  courseregistRepository.delete(studentCourse); 
+				  }				  
+			  }
+		  }
 		  for(String c : course) 
 		  {
 			  Courseregist cr = new Courseregist();

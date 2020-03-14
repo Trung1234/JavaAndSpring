@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import javax.validation.Valid;
 
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.dao.CourseDao;
 import com.example.demo.dao.StudentDao;
 import com.example.demo.models.Course;
+import com.example.demo.models.Courseregist;
 import com.example.demo.models.Student;
 
 @Controller
@@ -45,11 +47,16 @@ public class MainController {
 	@RequestMapping(value = { "/updateStudent" }, method = RequestMethod.GET)
 	public String updateStudent(@RequestParam("stid") int id,Model model) {
 		Student student = studentDao.getStudentById(id);
-//		List<Course> courses = courseDao.getAllCourses();
-
+		List<Course> courses = courseDao.getAllCourses();
+		Set<Courseregist> studentCourseregist = student.getCourseregist();
+		List<Course> studentCourses = new ArrayList<>();
+		for(Courseregist cs : studentCourseregist) {
+			studentCourses.add(cs.getCourse());
+		}
+		
 		model.addAttribute("student",student);
-//		model.addAttribute("courses",courses);
-//		model.addAttribute("stcourses",student.getCourses());
+		model.addAttribute("courses",courses);
+		model.addAttribute("studentCourses",studentCourses);
 		return "studentForm";
 	}
 	

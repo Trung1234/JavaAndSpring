@@ -24,7 +24,7 @@
 				<td>Course</td>
 				<td>
 				<th:block th:each="course : ${courses}">
-						<input th:checked="${student.id > 0 && student.course.contains(course)} ? 'true' : 'false'" 
+						<input th:checked="${student.id > 0 && studentCourses.contains(course)} ? 'true' : 'false'" 
 						type="checkbox" name="course" th:value="${course.id}" />
 						<label th:text="${course.name}"></label>
 					</th:block>
