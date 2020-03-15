@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:utext="#{label.title}"></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div th:replace="~{/fragments/myfragment :: header-default}"></div>
+        <div th:utext="#{label.title}">Login form</div>
+        <form th:action="@{/login}" method="POST">
+            <strong th:utext="#{label.username}"></strong><input type="text" name="email"><br>
+            <strong th:utext="#{label.password}"></strong><input type="password" name="password"><br>
+            <button type="submit" th:utext="#{label.submit}">L</button>
+            
+        </form>
+        <p th:if="${param.error}" style="color: red" th:utext="#{label.error}"></p>
+    </body>
+</html>

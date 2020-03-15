@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Style the header */
+            header {
+              background-color: #666;
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
+              color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header th:fragment = "header-default">
+            <a th:href="@{/language?lang=vi}">Vietnamese</a>
+            <a th:href="@{/language?lang=en}">English</a>
+        </header>
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,9 @@
+com\example\repositories\RoleRepository.class
+com\example\repositories\UserRepository.class
+com\example\controllers\MainController.class
+com\example\config\WebSecurityConfig.class
+com\example\models\User.class
+com\example\config\DataGenerate.class
+com\example\BasicApplication.class
+com\example\service\UserDetailsServiceImpl.class
+com\example\models\Role.class
