@@ -1,0 +1,5 @@
+com\example\BasicApplication.class
+com\example\dao\UserDao.class
+com\example\repositories\UserRepository.class
+com\example\controllers\MainController.class
+com\example\models\User.class
