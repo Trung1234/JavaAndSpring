@@ -6,7 +6,7 @@
  - The org.springframework.context.ApplicationContext interface represents the Spring IoC container and is responsible for instantiating, configuring, and assembling the beans.
  -  Instantiating a Container
      + The location path or paths supplied to an ApplicationContext constructor are resource strings that let the container load configuration metadata from a variety of external          resources, such as the local file system, the Java CLASSPATH, and so on.
-                  ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
+          - Java code : ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
  - Bean Definition:
      + In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
      + https://www.baeldung.com/spring-bean
