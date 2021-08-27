@@ -25,8 +25,8 @@ POM Example
 	   <version>1.0</version>
 	</project>
 	- It should be noted that there should be a single POM file for each project.
-		• groupId: This is an Id of project's group. This is generally unique amongst an organization or a project.
-		• artifactId: This is an Id of the project. This is generally name of the project.
-		• version : This is the version of the project. 
+		+  groupId: This is an Id of project's group. This is generally unique amongst an organization or a project.
+		+ artifactId: This is an Id of the project. This is generally name of the project.
+		+ version : This is the version of the project. 
 
 
