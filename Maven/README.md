@@ -24,9 +24,9 @@ POM Example
 	   <artifactId>project</artifactId>
 	   <version>1.0</version>
 	</project>
-	It should be noted that there should be a single POM file for each project.
-	•	All POM files require the project element and three mandatory fields: groupId, artifactId, version.
-	•	Projects notation in repository is groupId:artifactId:version.
-	•	Minimal requirements for a POM −
+	- It should be noted that there should be a single POM file for each project.
+		• groupId: This is an Id of project's group. This is generally unique amongst an organization or a project.
+		• artifactId: This is an Id of the project. This is generally name of the project.
+		• version : This is the version of the project. 
 
 
