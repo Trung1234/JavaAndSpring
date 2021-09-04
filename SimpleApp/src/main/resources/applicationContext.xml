@@ -8,7 +8,13 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <!-- define the dependency -->
+    <bean id="myFortuneService"
+    		class="code.HappyFortuneService">
+    </bean>
     <bean id = "myCoach" class = "code.TrackCoach">
+    	<!-- set up constructor injection -->
+ 		<constructor-arg ref="myFortuneService" />
    </bean>
    <bean id="myLoggerConfig" class="code.MyLoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINE" />
