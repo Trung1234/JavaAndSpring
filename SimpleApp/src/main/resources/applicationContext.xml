@@ -10,4 +10,8 @@
     <!-- Define your beans here -->
     <bean id = "myCoach" class = "code.TrackCoach">
    </bean>
+   <bean id="myLoggerConfig" class="code.MyLoggerConfig" init-method="initLogger">
+    	<property name="rootLoggerLevel" value="FINE" />
+    	<property name="printedLoggerLevel" value="FINE"/>
+    </bean>
 </beans>

@@ -4,7 +4,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApp {
 
-	public static void main(String[] args) {		
+	public static void main(String[] args) {	
+		// load the spring configuration file
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Coach myCoach = (TrackCoach) context.getBean("myCoach", Coach.class);
 		// use the object
