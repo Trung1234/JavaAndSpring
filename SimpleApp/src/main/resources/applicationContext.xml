@@ -20,4 +20,11 @@
     	<property name="rootLoggerLevel" value="FINE" />
     	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
+    <bean id="myCricketCoach"
+        class="code.CricketCoach"> 
+        
+        <!-- set up setter injection -->
+        <property name="fortuneService" ref="myFortuneService" />
+
+    </bean>
 </beans>
