@@ -17,4 +17,5 @@
      + Bean lifescycle: 
           - https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s05.html
           - https://techmaster.vn/posts/36168/spring-boot-3-spring-bean-life-cycle-postconstruct-va-predestroy
-     + 
+     + Constructor injection 
+          - https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation
