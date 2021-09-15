@@ -19,3 +19,5 @@
           - https://techmaster.vn/posts/36168/spring-boot-3-spring-bean-life-cycle-postconstruct-va-predestroy
      + Constructor injection 
           - https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation
+     + Autowired annotation
+          - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
