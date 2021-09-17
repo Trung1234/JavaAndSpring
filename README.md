@@ -21,5 +21,5 @@
           - https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation
      + Autowired annotation
           - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
-      + Spring bean scopes
+      + Spring bean scopes annotation
           - https://www.journaldev.com/21039/spring-bean-scopes
