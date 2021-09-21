@@ -2,7 +2,7 @@
  - Spring’s flexible and comprehensive set of extensions and third-party libraries let developers build almost any application imaginable. At its core, Spring Framework’s Inversion of Control (IoC) and Dependency Injection (DI) features provide the foundation for a wide-ranging set of features and functionality. 
  - The Spring community is enormous, global, diverse, and spans folks of all ages and capabilities, from complete beginners to seasoned pros. No matter where you are on your journey, you can find the support and resources you need to get you to the next level: quickstarts, guides & tutorials, videos, meetups, support, or even formal training and certification.
  - Spring is fast. With Spring, you’ll notice fast startup, fast shutdown, and optimized execution, by default. Increasingly, Spring projects also support the reactive (nonblocking) programming model for even greater efficiency.
- - Doc srping: https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/
+ - Doc spring: https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/
  - To add more lib in spring project
      + add dependency in pom.xml
      + Right-click on your project then "maven"->update project
