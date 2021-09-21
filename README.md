@@ -3,6 +3,9 @@
  - The Spring community is enormous, global, diverse, and spans folks of all ages and capabilities, from complete beginners to seasoned pros. No matter where you are on your journey, you can find the support and resources you need to get you to the next level: quickstarts, guides & tutorials, videos, meetups, support, or even formal training and certification.
  - Spring is fast. With Spring, you’ll notice fast startup, fast shutdown, and optimized execution, by default. Increasingly, Spring projects also support the reactive (nonblocking) programming model for even greater efficiency.
  - https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/
+ - To add more lib in spring project
+     + add dependency in pom.xml
+     + click "maven"->update project
 
 ## Spring’s Inversion of Control (IoC) container.
  - The org.springframework.context.ApplicationContext interface represents the Spring IoC container and is responsible for instantiating, configuring, and assembling the beans.
