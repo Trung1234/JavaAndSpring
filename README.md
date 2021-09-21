@@ -5,7 +5,7 @@
  - https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/
  - To add more lib in spring project
      + add dependency in pom.xml
-     + click "maven"->update project
+     + Right-click on your project then "maven"->update project
 
 ## Spring’s Inversion of Control (IoC) container.
  - The org.springframework.context.ApplicationContext interface represents the Spring IoC container and is responsible for instantiating, configuring, and assembling the beans.
