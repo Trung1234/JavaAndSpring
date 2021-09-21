@@ -12,8 +12,8 @@
  -  Instantiating a Container
      + The location path or paths supplied to an ApplicationContext constructor are resource strings that let the container load configuration metadata from a variety of external          resources, such as the local file system, the Java CLASSPATH, and so on.
           - Java code : ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
- - Bean Definition:
-     + In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
+ - Spring Bean :
+     + Definition: In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
      + https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction
      + Bean scope: 
           - https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s04.html
