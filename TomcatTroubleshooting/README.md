@@ -1,32 +1,96 @@
-## Why Spring?
- - Spring’s flexible and comprehensive set of extensions and third-party libraries let developers build almost any application imaginable. At its core, Spring Framework’s Inversion of Control (IoC) and Dependency Injection (DI) features provide the foundation for a wide-ranging set of features and functionality. 
- - The Spring community is enormous, global, diverse, and spans folks of all ages and capabilities, from complete beginners to seasoned pros. No matter where you are on your journey, you can find the support and resources you need to get you to the next level: quickstarts, guides & tutorials, videos, meetups, support, or even formal training and certification.
- - Spring is fast. With Spring, you’ll notice fast startup, fast shutdown, and optimized execution, by default. Increasingly, Spring projects also support the reactive (nonblocking) programming model for even greater efficiency.
- - Doc spring: https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/
- - To add more lib in spring project
-     + add dependency in pom.xml
-     + Right-click on your project then "maven"->update project
+##Can't Start Tomcat - Ports are in Use
 
-## Spring’s Inversion of Control (IoC) container.
- - The org.springframework.context.ApplicationContext interface represents the Spring IoC container and is responsible for instantiating, configuring, and assembling the beans.
- -  Instantiating a Container
-     + The location path or paths supplied to an ApplicationContext constructor are resource strings that let the container load configuration metadata from a variety of external          resources, such as the local file system, the Java CLASSPATH, and so on.
-          - Java code : ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
- - Spring Bean :
-     + Definition: In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
-     + https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction
-     + Bean scope: 
-          - https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s04.html
-     + Bean lifescycle: 
-          - https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s05.html
-          - https://techmaster.vn/posts/36168/spring-boot-3-spring-bean-life-cycle-postconstruct-va-predestroy
-     + Constructor injection 
-          - https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation
-     + Autowired annotation
-          - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
-      + Spring bean scopes annotation
-          - https://www.journaldev.com/21039/spring-bean-scopes
+You may have a problem starting Tomcat. You may see this ugly error message about ports in use.
 
-## Tomcat issue solutions
-- Command delivers basic statistics on all network activities and informs users on which portsand addresses : netstat -aon. 
-- https://stackoverflow.com/questions/59549059/the-server-cannot-started-because-one-or-more-of-the-ports-are-invalid-tomcat-i
+
+Solution
+
+You can use the troubleshooting tips below.
+
+Troubleshooting Tip #1
+
+1. Exit Eclipse
+
+2. Open a web web browser and visit, http://localhost:8080
+
+3. If you see a "Tomcat" web page then that means Tomcat is running as a Windows service. To stop Tomcat running as a Windows services, open your Windows Control Panel. Find the service "Apache Tomcat" and stop it.
+
+4. If you don't see a "Tomcat" web page, then stop the appropriate process displayed.
+
+
+
+--
+Troubleshooting Tip #2 - GUI Option
+
+Steps to free port which is already used to run Tomcat server in Eclipse
+
+1. On MS Windows, select Start > All Programs  > Accessories > System Tools >Resource Monitor
+
+2. Expand the Network Tab
+
+3. Move to the section for Listening Ports
+
+4. Look in the Port column and scroll to find entry for port 8080
+
+5. Select the given process and delete/kill the process
+
+6. Return back to Eclipse and start the Tomcat Server, it should start up now.
+
+
+
+---
+
+Troubleshooting Tip #3 - Command-Line Option
+
+Steps to free port which is already used to run Tomcat server in Eclipse
+
+For example , suppose 8080 port is used , we need to make free 8080 to run tomcat
+
+
+
+Step 1: (open the CMD command)
+
+C:\Users\username>netstat -o -n -a | findstr 0.0:8080
+
+TCP    0.0.0.0:3000      0.0.0.0:0              LISTENING       3116
+
+Now , we can see that LISTENING port is 3116 for 8080 ,
+
+We need to kill 3116 now
+
+
+
+Step 2:
+
+C:\Users\username>taskkill /F /PID 3116
+
+
+
+Step 3:  Return back to Eclipse and start the Tomcat Server, it should start up now.
+
+
+
+====
+
+Mac/Linux SOLUTION
+
+Step 0: Exit Eclipse
+
+Step 1: Open a terminal window
+
+
+
+Step 2: Enter the following command to find the process id
+
+lsof -i :8080
+This will give output of the application that is running on port 8080
+
+
+
+Step 3: Enter the following command to kill the process
+
+kill $(lsof -t -i :8080) 
+
+
+Step 4:  Return back to Eclipse and start the Tomcat Server, it should start up now.
+
