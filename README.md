@@ -26,8 +26,9 @@
           - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
       + Spring bean scopes annotation
           - https://www.journaldev.com/21039/spring-bean-scopes
-## Srping MVC
- - The
+## Srping Boot
+ - https://howtodoinjava.com/spring-boot-tutorials/
+ - https://www.baeldung.com/spring-boot
 ## Tomcat issue solutions
 - Command delivers basic statistics on all network activities and informs users on which portsand addresses : netstat -aon. 
 - https://stackoverflow.com/questions/59549059/the-server-cannot-started-because-one-or-more-of-the-ports-are-invalid-tomcat-i
