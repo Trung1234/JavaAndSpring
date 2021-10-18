@@ -26,7 +26,7 @@
           - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
       + Spring bean scopes annotation
           - https://www.journaldev.com/21039/spring-bean-scopes
-## Srping Boot
+## Spring Boot
  - https://howtodoinjava.com/spring-boot-tutorials/
  - https://www.baeldung.com/spring-boot
 ## Tomcat issue solutions
