@@ -1,5 +1,6 @@
 package com.howtodoinjava.demo.web;
-import java.util.Optional;  
+
+import java.util.Optional;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,49 +27,46 @@ import com.howtodoinjava.demo.service.EmployeeService;
 public class EmployeeMVCController {
 
 	@Autowired
-    EmployeeService service;
- 
-    
-    @RequestMapping(value =  "/list")
+	EmployeeService service;
+
+	@RequestMapping(value = "/list")
 	public String index(Model model) {
-    	List<EmployeeEntity> employees = service.getAllEmployees(); 
+		List<EmployeeEntity> employees = service.getAllEmployees();
 		model.addAttribute("employees", employees);
 
 		return "list-employees";
 	}
-    
-    @GetMapping("/{id}")
-    public ResponseEntity<EmployeeEntity> getEmployeeById(@PathVariable("id") Long id)
-                                                    throws RecordNotFoundException {
-        EmployeeEntity entity = service.getEmployeeById(id);
- 
-        return new ResponseEntity<EmployeeEntity>(entity, new HttpHeaders(), HttpStatus.OK);
-    }
 
-    @RequestMapping(value = "/add", method = RequestMethod.GET)  
-    public String addUser(Model model) { 
-    	EmployeeEntity employee = new EmployeeEntity();
-	    model.addAttribute("employee", employee);  
-	    return "add-edit-employee";  
-    }  
+	@GetMapping("/{id}")
+	public ResponseEntity<EmployeeEntity> getEmployeeById(@PathVariable("id") Long id) throws RecordNotFoundException {
+		EmployeeEntity entity = service.getEmployeeById(id);
 
-    @RequestMapping(value = "/edit", method = RequestMethod.GET)  
-    public String editUser(@RequestParam("id") Long userId, Model model) {  
-     // Optional<EmployeeEntity> userEdit = userService.findUserById(userId);  
-      //userEdit.ifPresent(user -> model.addAttribute("user", user));  
-      return "editUser";  
-    }  
+		return new ResponseEntity<EmployeeEntity>(entity, new HttpHeaders(), HttpStatus.OK);
+	}
 
-    @RequestMapping(value = "save", method = RequestMethod.POST)  
-    public String save(EmployeeEntity user) throws RecordNotFoundException {  
-      service.createOrUpdateEmployee(user);  
-      return "redirect:/employee/list";
-    }  
-    
-    @DeleteMapping("/{id}")
-    public HttpStatus deleteEmployeeById(@PathVariable("id") Long id)
-                                                    throws RecordNotFoundException {
-        service.deleteEmployeeById(id);
-        return HttpStatus.FORBIDDEN;
-    }
+	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	public String addUser(Model model) {
+		EmployeeEntity employee = new EmployeeEntity();
+		model.addAttribute("employee", employee);
+		return "add-edit-employee";
+	}
+
+	@RequestMapping(value = "/edit", method = RequestMethod.GET)
+	public String editUser(@RequestParam("id") Long id, Model model) throws RecordNotFoundException {
+		EmployeeEntity employee = service.getEmployeeById(id);
+		model.addAttribute("employee", employee);
+		return "add-edit-employee";
+	}
+
+	@RequestMapping(value = "save", method = RequestMethod.POST)
+	public String save(EmployeeEntity user) throws RecordNotFoundException {
+		service.createOrUpdateEmployee(user);
+		return "redirect:/employee/list";
+	}
+
+	@DeleteMapping("/{id}")
+	public HttpStatus deleteEmployeeById(@PathVariable("id") Long id) throws RecordNotFoundException {
+		service.deleteEmployeeById(id);
+		return HttpStatus.FORBIDDEN;
+	}
 }
