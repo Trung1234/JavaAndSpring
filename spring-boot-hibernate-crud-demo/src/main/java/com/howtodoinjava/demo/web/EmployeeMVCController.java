@@ -48,6 +48,7 @@ public class EmployeeMVCController {
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addUser(Model model) {
 		EmployeeEntity employee = new EmployeeEntity();
+		employee.setId(0L);
 		model.addAttribute("employee", employee);
 		return "add-edit-employee";
 	}
@@ -65,9 +66,9 @@ public class EmployeeMVCController {
 		return "redirect:/employee/list";
 	}
 
-	@DeleteMapping("/{id}")
-	public HttpStatus deleteEmployeeById(@PathVariable("id") Long id) throws RecordNotFoundException {
+	@RequestMapping("/delete/{id}")
+	public String deleteEmployeeById(@PathVariable("id") Long id) throws RecordNotFoundException {
 		service.deleteEmployeeById(id);
-		return HttpStatus.FORBIDDEN;
+		return "redirect:/employee/list";
 	}
 }

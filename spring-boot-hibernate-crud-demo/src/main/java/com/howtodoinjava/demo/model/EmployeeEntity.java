@@ -14,7 +14,10 @@ import javax.persistence.Table;
 public class EmployeeEntity  implements Serializable {
 	
 	
-	public EmployeeEntity() {} 
+	public EmployeeEntity() {
+		
+	}
+	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

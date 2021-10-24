@@ -66,7 +66,7 @@ public class EmployeeService {
 
 			return newEntity;
 		} else {
-			entity.setId(0L);
+			//entity.setId(0L);
 			entity = repository.save(entity);
 
 			return entity;
