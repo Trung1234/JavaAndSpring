@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.howtodoinjava.demo.exception.RecordNotFoundException;
 import com.howtodoinjava.demo.model.EmployeeEntity;
@@ -51,13 +52,13 @@ public class EmployeeMVCController {
 		return "add-edit-employee";
 	}
 
-	@RequestMapping(value = "/edit", method = RequestMethod.GET)
-	public String editUser(@RequestParam("id") Long id, Model model) throws RecordNotFoundException {
-		EmployeeEntity employee = service.getEmployeeById(id);
-		model.addAttribute("employee", employee);
-		return "add-edit-employee";
+	@RequestMapping("/edit/{id}")
+	public ModelAndView showEditProductPage(@PathVariable(name = "id") Long id) throws RecordNotFoundException {
+	    ModelAndView mav = new ModelAndView("edit-employee");
+	    EmployeeEntity employee = service.getEmployeeById(id);
+	    mav.addObject("employee", employee);	     
+	    return mav;
 	}
-
 	@RequestMapping(value = "save", method = RequestMethod.POST)
 	public String save(EmployeeEntity user) throws RecordNotFoundException {
 		service.createOrUpdateEmployee(user);
