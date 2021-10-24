@@ -62,7 +62,7 @@ public class EmployeeMVCController {
     @RequestMapping(value = "save", method = RequestMethod.POST)  
     public String save(EmployeeEntity user) throws RecordNotFoundException {  
       service.createOrUpdateEmployee(user);  
-      return "redirect:/";  
+      return "redirect:/employee/list";
     }  
     
     @DeleteMapping("/{id}")
