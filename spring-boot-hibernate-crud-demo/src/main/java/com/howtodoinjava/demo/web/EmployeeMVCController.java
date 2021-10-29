@@ -1,9 +1,14 @@
 package com.howtodoinjava.demo.web;
 
 import java.util.Optional;
+
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,7 +42,30 @@ public class EmployeeMVCController {
 
 		return "list-employees";
 	}
+	
+	@RequestMapping(value = "/listEmployees", method = RequestMethod.GET)
+    public String listEmployees(
+      Model model, 
+      @RequestParam("page") Optional<Integer> page, 
+      @RequestParam("size") Optional<Integer> size) {
+        int currentPage = page.orElse(1);
+        int pageSize = size.orElse(5);
 
+        Page<EmployeeEntity> employees = service.findPaginated(PageRequest.of(currentPage - 1, pageSize));
+
+        model.addAttribute("employees", employees);
+
+        int totalPages = employees.getTotalPages();
+        if (totalPages > 0) {
+            List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages)
+                .boxed()
+                .collect(Collectors.toList());
+            model.addAttribute("pageNumbers", pageNumbers);
+        }
+
+        return "list-emplouees-paging.html";
+    }
+	
 	@GetMapping("/{id}")
 	public ResponseEntity<EmployeeEntity> getEmployeeById(@PathVariable("id") Long id) throws RecordNotFoundException {
 		EmployeeEntity entity = service.getEmployeeById(id);
