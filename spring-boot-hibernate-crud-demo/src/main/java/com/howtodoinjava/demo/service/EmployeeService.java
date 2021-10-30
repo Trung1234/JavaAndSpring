@@ -7,7 +7,9 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.howtodoinjava.demo.exception.RecordNotFoundException;
@@ -34,7 +36,15 @@ public class EmployeeService {
         Page<EmployeeEntity> page = repository.findAll(pageable);
         return page;
 	}
-
+	
+	public Page<EmployeeEntity> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection) {
+	    Sort sort = sortDirection.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(sortField).ascending() :
+	    Sort.by(sortField).descending();
+	 
+	    Pageable pageable = PageRequest.of(pageNo - 1, pageSize, sort);
+	    return repository.findAll(pageable);
+	}
+	
 	public EmployeeEntity getEmployeeById(Long id) throws RecordNotFoundException {
 		Optional<EmployeeEntity> employee = repository.findById(id);
 
@@ -62,7 +72,7 @@ public class EmployeeService {
 	 * return entity; } }
 	 */
 	public EmployeeEntity createOrUpdateEmployee(EmployeeEntity entity) throws RecordNotFoundException {
-		Optional<EmployeeE ntity> employee = repository.findById(entity.getId());
+		Optional<EmployeeEntity> employee = repository.findById(entity.getId());
 
 		if (employee.isPresent()) {
 			EmployeeEntity newEntity = employee.get();
