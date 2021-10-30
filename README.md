@@ -32,6 +32,7 @@
  - https://mkyong.com/spring-boot/spring-boot-spring-security-thymeleaf-example/
  - Pagination: https://www.baeldung.com/spring-thymeleaf-pagination
  - Sorting : https://www.javaguides.net/2020/06/pagination-and-sorting-with-spring-boot-thymeleaf-spring-data-jpa-hibernate-mysql.html
+ - https://codebun.com/create-a-login-form-using-thymleaf-in-spring-boot/
 ## Tomcat issue solutions
 - Command delivers basic statistics on all network activities and informs users on which portsand addresses : netstat -aon. 
 - https://stackoverflow.com/questions/59549059/the-server-cannot-started-because-one-or-more-of-the-ports-are-invalid-tomcat-i
