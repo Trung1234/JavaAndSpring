@@ -35,3 +35,6 @@
 ## Tomcat issue solutions
 - Command delivers basic statistics on all network activities and informs users on which portsand addresses : netstat -aon. 
 - https://stackoverflow.com/questions/59549059/the-server-cannot-started-because-one-or-more-of-the-ports-are-invalid-tomcat-i
+
+## References
+https://www.javaguides.net/p/top-java-tutorials.html
