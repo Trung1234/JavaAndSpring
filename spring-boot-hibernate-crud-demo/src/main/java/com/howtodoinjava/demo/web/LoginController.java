@@ -1,5 +1,7 @@
 package com.howtodoinjava.demo.web;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,10 +27,12 @@ public class LoginController {
 
 	// Check for Credentials
 	@PostMapping("/login")
-	public String login(@ModelAttribute(name = "loginForm") User login, Model m) {
+	public String login(@ModelAttribute(name = "loginForm") User login, Model m
+			, HttpServletRequest request) {
 		String uname = login.getName();
 		String pass = login.getPassword();
 		if (service.checkLogin(uname, pass)) {
+			request.getSession().setAttribute("login", login);
 			m.addAttribute("uname", uname);
 			m.addAttribute("pass", pass);
 			return "welcome";

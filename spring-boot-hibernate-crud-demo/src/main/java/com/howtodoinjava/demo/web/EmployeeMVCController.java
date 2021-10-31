@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -26,6 +29,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.howtodoinjava.demo.exception.RecordNotFoundException;
 import com.howtodoinjava.demo.model.EmployeeEntity;
+import com.howtodoinjava.demo.model.User;
 import com.howtodoinjava.demo.service.EmployeeService;
 
 @Controller
@@ -71,9 +75,10 @@ public class EmployeeMVCController {
 	public String findPaginated(@PathVariable(value = "pageNo") int pageNo,
 	    @RequestParam("sortField") String sortField,
 	    @RequestParam("sortDir") String sortDir,
-	    Model model) {
+	    Model model,
+	    HttpSession session) {
 	    int pageSize = 5;
-
+	    User user = (User) session.getAttribute("login");
 	    Page<EmployeeEntity> page = service.findPaginated(pageNo, pageSize, sortField, sortDir);
 	    List<EmployeeEntity> listEmployees = page.getContent();
 
