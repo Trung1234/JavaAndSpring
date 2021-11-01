@@ -35,6 +35,7 @@
  - https://codebun.com/create-a-login-form-using-thymleaf-in-spring-boot/
  - Session: https://www.javainuse.com/spring/springboot_session
  - Authenticate: https://o7planning.org/11705/create-a-login-application-with-spring-boot-spring-security-jpa
+ - CRUD Ajax: https://loizenjs.com/spring-boot-thymeleaf-ajax-crud-example/
 ## Tomcat issue solutions
 - Command delivers basic statistics on all network activities and informs users on which portsand addresses : netstat -aon. 
 - https://stackoverflow.com/questions/59549059/the-server-cannot-started-because-one-or-more-of-the-ports-are-invalid-tomcat-i
