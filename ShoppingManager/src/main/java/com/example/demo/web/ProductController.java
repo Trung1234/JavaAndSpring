@@ -18,17 +18,22 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.demo.exception.RecordNotFoundException;
 import com.example.demo.model.Product;
 import com.example.demo.service.ProductService;
-
-
-
+import java.util.List;
 
 @Controller
 @RequestMapping("/")
 public class ProductController {
 
-	@Autowired(required=true)
+	@Autowired(required = true)
 	ProductService service;
-	
+
+	@RequestMapping(value = "/list")
+	public String index(Model model) {
+		List<Product> products = service.getAllProduct();
+		model.addAttribute("products", products);
+		return "list-products";
+	}
+
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String addProduct(Model model) {
 		Product product = new Product();
@@ -37,15 +42,15 @@ public class ProductController {
 		return "add-product";
 	}
 
-
 	@RequestMapping(value = "save", method = RequestMethod.POST)
-	public String save(Product product,
-			@RequestParam("file") MultipartFile file) throws RecordNotFoundException, IOException {
-		String fileLocation = new File("src\\main\\resources\\static\\uploads").getAbsolutePath() + "\\" + file.getName();
+	public String save(Product product, @RequestParam("file") MultipartFile file)
+			throws RecordNotFoundException, IOException {
+		String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
+				+ file.getOriginalFilename();
 		FileOutputStream output = new FileOutputStream(fileLocation);
 		output.write(file.getBytes());
 		output.close();
-		product.setImagePath(file.getName());
+		product.setImagePath(fileLocation);
 		service.createOrUpdateProduct(product);
 		return "add-product";
 	}
