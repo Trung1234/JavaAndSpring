@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Edit Employee</title>
+    <title>Add Product</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -12,26 +12,31 @@
 
 <body>
     <div class="container my-5">
-        <h3> Edit Employee</h3>
+        <h3> Add product</h3>
         <div class="card">
             <div class="card-body">
                 <div class="col-md-10">
-                    <form action="#" th:action="@{/employee/save}" th:object="${employee}" method="post">
+                    <form action="#" th:action="@{/save}" enctype="multipart/form-data" th:object="${product}"   method="post">
                         <div class="row">
                             <div class="form-group col-md-8">
                                 <label for="name" class="col-form-label">First Name</label> 
-                                <input type="text" th:field="*{firstName}" class="form-control" 
-                                            id="firstName" placeholder="First Name" />
+                                <input type="text" th:field="*{name}" class="form-control" 
+                                            id="name" placeholder="Name" />
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="name" class="col-form-label">Last Name</label> 
-                                <input type="text" th:field="*{lastName}" class="form-control" 
-                                            id="lastName" placeholder="Last Name" />
+                                <label for="brand" class="col-form-label">First Name</label> 
+                                <input type="text" th:field="*{brand}" class="form-control" 
+                                            id="brand" placeholder="brand" />
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="email" class="col-form-label">Email</label> 
-                                <input type="text" th:field="*{email}" class="form-control" 
-                                            id="email" placeholder="Email Id" />
+                                <label for="authorName" class="col-form-label">First Name</label> 
+                                <input type="text" th:field= "*{authorName}"class="form-control" 
+                                            id="authorName" placeholder="authorName" />
+                            </div>
+    
+                            <div class="form-group col-md-8">
+                               <input type="file" class="custom-file-input" id="customFile" name="file">
+                       			<label class="custom-file-label" for="customFile">Choose file</label>
                             </div>
 
                             <div class="col-md-6">
