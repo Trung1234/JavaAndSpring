@@ -63,15 +63,19 @@
 	<section class="mt-4 mb-4">
 		<div class="container">
 			<div class="input-group ">
-			<a th:href="@{'/list/' + ${currentPage} + '?sortField=name&sortDir=' + ${reverseSortDir}}">
+			<form th:action="@{/search}" method="get">
+				<a th:href="@{'/list/' + ${currentPage} + '?sortField=name}">
 						Sort by name</a>
-				<input type="text" class="form-control"
+				<input type="text" class="form-control"  th:value="${keyword}"
+				name="keyword" id="keyword" 
 					placeholder="Search course...">
 				<div class="input-group-append ">
 					<button class="btn btn-success" type="submit">
 						<i class="fa fa-search"></i>
 					</button>
-				</div>
+				</div> 
+			</form>
+			
 			</div>
 			<div class="row mt-4">
 				<div class="col-12 col-sm-6 col-lg-3 mt-4  "
@@ -105,20 +109,20 @@
 				<div class="row col-sm-11">
 					<div class="col-sm-1">
 						<a th:if="${currentPage < totalPages}"
-							th:href="@{'/list/' + ${currentPage + 1}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">Next</a>
+							th:href="@{'/list/' + ${currentPage + 1}+ '?sortField=' + ${sortField}}">Next</a>
 						<span th:unless="${currentPage < totalPages}">Next</span>
 					</div>
 					<div >
 						<span th:each="i: ${#numbers.sequence(1, totalPages)}"> <a
 							th:if="${currentPage != i}"
-							th:href="@{'/list/' + ${i}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">[[${i}]]</a>
+							th:href="@{'/list/' + ${i}+ '?sortField=' + ${sortField}}">[[${i}]]</a>
 							<span th:unless="${currentPage != i}">[[${i}]]</span> &nbsp;
 							&nbsp;
 						</span>
 					</div>
 					<div class="col-sm-1">
 						<a th:if="${currentPage < totalPages}"
-							th:href="@{'/list/' + ${totalPages}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">Last</a>
+							th:href="@{'/list/' + ${totalPages}+ '?sortField=' + ${sortField}} ">Last</a>
 						<span th:unless="${currentPage < totalPages}">Last</span>
 					</div>
 				</div>

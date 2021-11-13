@@ -27,21 +27,13 @@ public class ProductService {
 		return entity;
 	}
 	
-	public Page<Product> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection) {
-	    Sort sort = sortDirection.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(sortField).ascending() :
-	    Sort.by(sortField).descending();
-	 
-	    Pageable pageable = PageRequest.of(pageNo - 1, pageSize, sort);
-	    return repository.findAll(pageable);
-	}
-	
-	public List<Product> getAllProduct() {
-		List<Product> products = repository.findAll();
-
-		if (products.size() > 0) {
-			return products;
-		} else {
-			return new ArrayList<Product>();
-		}
-	}
+	public Page<Product> findPaginated(int pageNo, String sortField,String name) {
+		pageNo = pageNo == 0 ? 1 : pageNo;
+		int pageSize = 8;	
+	    Pageable pageable = PageRequest.of(pageNo - 1, pageSize, Sort.by(sortField).descending());
+	    if(name != null && !name.isEmpty())
+	    	return repository.findAllByName(name,pageable);
+	    else
+	    	return repository.findAll(pageable);
+	}	
 }
