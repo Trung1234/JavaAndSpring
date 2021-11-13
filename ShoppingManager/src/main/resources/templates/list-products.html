@@ -64,7 +64,7 @@
 		<div class="container">
 			<div class="input-group ">
 			<form th:action="@{/search}" method="get">
-				<a th:href="@{'/list/' + ${currentPage} + '?sortField=name}">
+				<a th:href="@{'/list/' + ${currentPage} + '?sortField=name'}">
 						Sort by name</a>
 				<input type="text" class="form-control"  th:value="${keyword}"
 				name="keyword" id="keyword" 
