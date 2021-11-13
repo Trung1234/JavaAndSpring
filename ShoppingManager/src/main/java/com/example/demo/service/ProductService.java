@@ -32,7 +32,7 @@ public class ProductService {
 		int pageSize = 8;	
 	    Pageable pageable = PageRequest.of(pageNo - 1, pageSize, Sort.by(sortField).descending());
 	    if(name != null && !name.isEmpty())
-	    	return repository.findAllByName(name,pageable);
+	    	return repository.findAllByNameContaining(name,pageable);
 	    else
 	    	return repository.findAll(pageable);
 	}	

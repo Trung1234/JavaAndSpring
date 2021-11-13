@@ -12,5 +12,6 @@ import com.example.demo.model.Product;
 @Repository
 public interface ProductRepository
         extends PagingAndSortingRepository<Product, Long> {
-	Page<Product>  findAllByName(String name, Pageable pageable);
+
+	Page<Product> findAllByNameContaining(String name, Pageable pageable);
 }

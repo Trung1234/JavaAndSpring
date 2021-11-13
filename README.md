@@ -26,8 +26,7 @@
           - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
      + Spring bean scopes annotation
           - https://www.journaldev.com/21039/spring-bean-scopes
-     + LIKE Queries in Spring JPA
-          - https://www.baeldung.com/spring-jpa-like-queries
+
 ## Spring Boot
  - https://howtodoinjava.com/spring-boot-tutorials/
  - https://www.baeldung.com/spring-boot
@@ -38,6 +37,7 @@
  - Session: https://www.javainuse.com/spring/springboot_session
  - Authenticate: https://o7planning.org/11705/create-a-login-application-with-spring-boot-spring-security-jpa
  - CRUD Ajax: https://loizenjs.com/spring-boot-thymeleaf-ajax-crud-example/
+ - LIKE Queries in Spring JPA: https://www.baeldung.com/spring-jpa-like-queries
 ## Spring Security
  - Why you should use BCrypt to hash passwords:
       + Using a Key Factor, BCrypt is able to adjust the cost of hashing. With Key Factor changes, the hash output can be influenced. In this way, BCrypt remains extremely resistant to hacks, especially a type of password cracking called rainbow table.
