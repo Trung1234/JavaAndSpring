@@ -24,8 +24,10 @@
           - https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation
      + Autowired annotation
           - https://techmaster.vn/posts/36167/spring-boot-2-autowired-primary-qualifier
-      + Spring bean scopes annotation
+     + Spring bean scopes annotation
           - https://www.journaldev.com/21039/spring-bean-scopes
+     + LIKE Queries in Spring JPA
+          - https://www.baeldung.com/spring-jpa-like-queries
 ## Spring Boot
  - https://howtodoinjava.com/spring-boot-tutorials/
  - https://www.baeldung.com/spring-boot
