@@ -6,8 +6,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,10 +29,29 @@ public class ProductController {
 	@Autowired(required = true)
 	ProductService service;
 
-	@RequestMapping(value = "/list")
+	@RequestMapping(value = "/index")
 	public String index(Model model) {
 		List<Product> products = service.getAllProduct();
 		model.addAttribute("products", products);
+		return "list-products";
+	}
+
+	// http://localhost:8080/list/1?sortField=name&sortDir=desc
+	@GetMapping("/list/{pageNo}")
+	public String index(@PathVariable(value = "pageNo") int pageNo,
+			@RequestParam("sortField") String sortField,
+			@RequestParam("sortDir") String sortDir,
+			Model model) {
+		int pageSize = 8;
+		Page<Product> page = service.findPaginated(pageNo, pageSize, sortField, sortDir);
+		List<Product> products = page.getContent();
+		model.addAttribute("currentPage", pageNo);
+	    model.addAttribute("totalPages", page.getTotalPages());
+	    model.addAttribute("totalItems", page.getTotalElements());
+	    model.addAttribute("sortField", sortField);
+	    model.addAttribute("sortDir", sortDir);
+	    model.addAttribute("reverseSortDir", sortDir.equals("asc") ? "desc" : "asc");
+	    model.addAttribute("products", products);
 		return "list-products";
 	}
 

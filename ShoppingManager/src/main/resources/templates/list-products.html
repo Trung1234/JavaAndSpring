@@ -63,6 +63,8 @@
 	<section class="mt-4 mb-4">
 		<div class="container">
 			<div class="input-group ">
+			<a th:href="@{'/list/' + ${currentPage} + '?sortField=name&sortDir=' + ${reverseSortDir}}">
+						Sort by name</a>
 				<input type="text" class="form-control"
 					placeholder="Search course...">
 				<div class="input-group-append ">
@@ -96,6 +98,28 @@
 							<p>Fringilla erat sollicitudin nisi at sem ornare congue
 								fringilla erat soll</p>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4" th:if="${totalPages > 1}">
+				<div class="row col-sm-11">
+					<div class="col-sm-1">
+						<a th:if="${currentPage < totalPages}"
+							th:href="@{'/list/' + ${currentPage + 1}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">Next</a>
+						<span th:unless="${currentPage < totalPages}">Next</span>
+					</div>
+					<div >
+						<span th:each="i: ${#numbers.sequence(1, totalPages)}"> <a
+							th:if="${currentPage != i}"
+							th:href="@{'/list/' + ${i}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">[[${i}]]</a>
+							<span th:unless="${currentPage != i}">[[${i}]]</span> &nbsp;
+							&nbsp;
+						</span>
+					</div>
+					<div class="col-sm-1">
+						<a th:if="${currentPage < totalPages}"
+							th:href="@{'/list/' + ${totalPages}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">Last</a>
+						<span th:unless="${currentPage < totalPages}">Last</span>
 					</div>
 				</div>
 			</div>
@@ -136,9 +160,6 @@
 				<div>
 					<a href="#"><i class="fab fa-youtube"></i></a>
 				</div>
-				<!-- <div>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div> -->
 			</div>
 		</div>
 
@@ -146,13 +167,6 @@
 			<div class="v-f01 v-a2">
 				<h3>Latest POSTS</h3>
 				<i class="material-icons">alarm</i>
-			</div>
-			<div class="v-f03">
-				<div class="v-f02">
-					<img src="images/footer01.png" alt="">
-					<p>Image post List, Media</p>
-				</div>
-				<p>Hendrerit mattis justo at suscipit</p>
 			</div>
 			<div class="v-f03">
 				<div class="v-f02">

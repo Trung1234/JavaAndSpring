@@ -159,7 +159,7 @@ span{
 }
 /*------------------------footer------------------*/
 footer{
-    display: flex;
+    display: flex !important;
     line-height: 25px;
     background-color: #2d3339;
     color: #b0b0b0;
