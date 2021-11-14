@@ -41,7 +41,7 @@ public class ProductController {
 		return "list-products";
 	}
 
-	// http://localhost:8080/list/1?sortField=id
+	// http://localhost:8080/product/list/1?sortField=name
 	@GetMapping("/list/{pageNo}")
 	public String index(@PathVariable(value = "pageNo") int pageNo,
 			@RequestParam("sortField") String sortField,
@@ -54,26 +54,5 @@ public class ProductController {
 	    model.addAttribute("sortField", sortField);
 	    model.addAttribute("products", products);
 		return "list-products";
-	}
-
-	@RequestMapping(value = "/add", method = RequestMethod.GET)
-	public String addProduct(Model model) {
-		Product product = new Product();
-		product.setId(0L);
-		model.addAttribute("product", product);
-		return "add-product";
-	}
-
-	@RequestMapping(value = "save", method = RequestMethod.POST)
-	public String save(Product product, @RequestParam("file") MultipartFile file)
-			throws RecordNotFoundException, IOException {
-		String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
-				+ file.getOriginalFilename();
-		FileOutputStream output = new FileOutputStream(fileLocation);
-		output.write(file.getBytes());
-		output.close();
-		product.setImagePath(fileLocation);
-		service.createOrUpdateProduct(product);
-		return "add-product";
 	}
 }
