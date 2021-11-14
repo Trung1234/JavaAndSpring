@@ -20,8 +20,8 @@ public class Product {
 	@Column(name="image_path")
 	private String imagePath;
 
-	@Column(name="brand")  
-    private String brand;
+	@Column(name="content")  
+    private String content;
     
     @Column(name="author_name")
     private String authorName;
@@ -49,13 +49,13 @@ public class Product {
 	}
 
 
-	public String getBrand() {
-		return brand;
+	public String getContent() {
+		return content;
 	}
 
 
-	public void setBrand(String brand) {
-		this.brand = brand;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 
