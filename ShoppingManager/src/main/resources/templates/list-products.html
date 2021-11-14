@@ -23,47 +23,13 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
-<body>
-	<header>
-		<div class="v-a01">
-			<ul class="v-h01">
-				<li><i class="material-icons">phone</i><a> 01677448499</a></li>
-				<li><i class="material-icons">email</i><a>
-						itsoftvn@gmail.com</a></li>
-			</ul>
-			<ul class="v-h02">
-				<li><a><i class="material-icons icon2">account_box</i></a></li>
-				<li><a><i class="material-icons icon3">add_shopping_cart</i></a></li>
-			</ul>
-		</div>
-
-
-		<div class="v-b01">
-			<div class="v-h05">
-				<img src="images/logo.png" alt="">
-			</div>
-
-			<div class="v-h03 ">
-				<ul class="v-i01">
-					<li><a>Home</a></li>
-					<li><a>Pages</a></li>
-					<li class="v-out"><a>Courses</a></li>
-					<li class="v-out"><a>Portfolio</a></li>
-					<li><a>Blog</a></li>
-					<li><a>Shop</a></li>
-					<li class="v-li01"><a>Contact Us</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="v-c03">
-			<h1>Two Columns</h1>
-			<p>Home &rarr; Two columns</p>
-		</div>
-	</header>
+<body>	
+	<!-- Include  _header.html -->
+     <th:block th:include="header.html"></th:block>
 	<section class="mt-4 mb-4">
 		<div class="container">
-			<form th:action="@{/search}" method="get" class="row mt-4">
-				<a th:href="@{'/list/' + ${currentPage} + '?sortField=name'}"
+			<form th:action="@{/product/search}" method="get" class="row mt-4">
+				<a th:href="@{'/product/list/' + ${currentPage} + '?sortField=name'}"
 				class="col-3">
 						Sort by name</a>
 				<input type="text" class="form-control col-6"  th:value="${keyword}"
@@ -107,98 +73,27 @@
 				<div class="row col-sm-11">
 					<div class="col-sm-1">
 						<a th:if="${currentPage < totalPages}"
-							th:href="@{'/list/' + ${currentPage + 1}+ '?sortField=' + ${sortField}}">Next</a>
+							th:href="@{'/product/list/' + ${currentPage + 1}+ '?sortField=' + ${sortField}}">Next</a>
 						<span th:unless="${currentPage < totalPages}">Next</span>
 					</div>
 					<div >
 						<span th:each="i: ${#numbers.sequence(1, totalPages)}"> <a
 							th:if="${currentPage != i}"
-							th:href="@{'/list/' + ${i}+ '?sortField=' + ${sortField}}">[[${i}]]</a>
+							th:href="@{'/product/list/' + ${i}+ '?sortField=' + ${sortField}}">[[${i}]]</a>
 							<span th:unless="${currentPage != i}">[[${i}]]</span> &nbsp;
 							&nbsp;
 						</span>
 					</div>
 					<div class="col-sm-1">
 						<a th:if="${currentPage < totalPages}"
-							th:href="@{'/list/' + ${totalPages}+ '?sortField=' + ${sortField}} ">Last</a>
+							th:href="@{'/product/list/' + ${totalPages}+ '?sortField=' + ${sortField}} ">Last</a>
 						<span th:unless="${currentPage < totalPages}">Last</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="v-p01">
-			<div class="v-f01 v-a1">
-				<h3>ABOUT US</h3>
-				<i class="material-icons">check_circle_outline</i>
-			</div>
-			<b>Sed aliquet dui auctor blandit ipsum tincidunt </b>
-			<p>Quis rhoncus lorem dolor eu sem. Aenean enim risus, convallis
-				id ultrices eget.</p>
-			<p>
-				<i class="material-icons">phone</i>123-123456789
-			</p>
-			<p>
-				<i class="material-icons">email</i>uni@domain.com
-			</p>
-			<p>
-				<i class="material-icons">http</i>www.sample.com
-			</p>
-			<p>
-				<i class="material-icons">home_work</i> 250 Biscayne Blvd. (North)
-				11st Floor New World Tower Miami, 33148
-			</p>
-			<div class="social-icon">
-				<div>
-					<a href="#"><i class="fab fa-facebook"></i></a>
-				</div>
-				<div>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				</div>
-				<div>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div>
-					<a href="#"><i class="fab fa-youtube"></i></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="v-p01">
-			<div class="v-f01 v-a2">
-				<h3>Latest POSTS</h3>
-				<i class="material-icons">alarm</i>
-			</div>
-			<div class="v-f03">
-				<div class="v-f02">
-					<img src="images/footer01.png" alt="">
-					<p>Image post List, Media</p>
-				</div>
-				<p>Hendrerit mattis justo at suscipit</p>
-			</div>
-			<div class="v-f03 v-a3">
-				<div class="v-f02">
-					<img src="images/footer01.png" alt="">
-					<p>Image post List, Media</p>
-				</div>
-				<p>Hendrerit mattis justo at suscipit</p>
-			</div>
-		</div>
-
-		<div class="v-p01">
-			<div class="v-f01 v-a4">
-				<h3>CONTACTS</h3>
-				<i class="material-icons">folder_open</i>
-			</div>
-			<div>
-				<input type="text" placeholder="Name*" id="v-name"> <input
-					type="text" placeholder="Phone*" id="v-phone">
-				<textarea rows="8" placeholder="Comments." id="v-mess"></textarea>
-				<input type="submit" value="Submit " id="sub">
-			</div>
-		</div>
-	</footer>
-
+	<!-- Include  footer.html -->
+     <th:block th:include="footer.html"></th:block>
 </body>
 </html>

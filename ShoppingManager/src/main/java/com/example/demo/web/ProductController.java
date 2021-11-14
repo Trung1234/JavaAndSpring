@@ -21,7 +21,7 @@ import com.example.demo.service.ProductService;
 import java.util.List;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/product/")
 public class ProductController {
 
 	@Autowired(required = true)
