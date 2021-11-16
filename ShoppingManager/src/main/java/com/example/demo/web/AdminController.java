@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.demo.exception.RecordNotFoundException;
 import com.example.demo.model.Product;
@@ -46,15 +47,21 @@ public class AdminController {
 	}
 
 	@RequestMapping(value = "save", method = RequestMethod.POST)
-	public String save(Product product, @RequestParam("file") MultipartFile file)
+	public String save(Product product, @RequestParam("file") MultipartFile file
+			, RedirectAttributes redirAttrs)
 			throws RecordNotFoundException, IOException {
 		String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
 				+ file.getOriginalFilename();
-		FileOutputStream output = new FileOutputStream(fileLocation);
-		output.write(file.getBytes());
-		output.close();
-		product.setImagePath("/images/"+file.getOriginalFilename());
-		service.createOrUpdateProduct(product);
-		return "add-product";
+		try {
+			FileOutputStream output = new FileOutputStream(fileLocation);
+			output.write(file.getBytes());
+			output.close();
+			product.setImagePath("/images/"+file.getOriginalFilename());
+			service.createOrUpdateProduct(product);
+		}catch(Exception ex) {
+			redirAttrs.addFlashAttribute("error", "an error happened, please contact admin.");
+		}	
+		redirAttrs.addFlashAttribute("success", "product has been created.");
+		return "redirect:/admin/add";
 	}
 }

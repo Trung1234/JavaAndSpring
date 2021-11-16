@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -20,11 +21,21 @@ public class ProductService {
 	ProductRepository repository;
 
 	public Product createOrUpdateProduct(Product entity) throws RecordNotFoundException {
-		// Optional<Product> employee = repository.findById(entity.getId());
-
-		entity = repository.save(entity);
-
-		return entity;
+		Optional<Product> product = repository.findById(entity.getId());
+		if(product.isPresent()) 
+		{
+			Product newProduct = product.get();
+			newProduct.setName(entity.getName());
+			newProduct.setPrice(entity.getPrice());
+			newProduct.setContent(entity.getContent());
+			newProduct.setImagePath(entity.getImagePath());
+			newProduct.setAuthorName(entity.getAuthorName());
+			return newProduct;
+		}
+		else {
+			entity = repository.save(entity);
+			return entity;
+		}			
 	}
 	
 	public Page<Product> findPaginated(int pageNo, String sortField,String name) {

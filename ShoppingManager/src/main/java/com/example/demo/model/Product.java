@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name="product")
@@ -14,15 +15,19 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 	
+	@NotEmpty(message = "name cannot be empty.")
 	@Column(name="name")
     private String name;
 	
+	@NotEmpty(message = "imagePath cannot be empty.")
 	@Column(name="image_path")
 	private String imagePath;
 
+	@NotEmpty(message = "content cannot be empty.")
 	@Column(name="content")  
     private String content;
     
+	@NotEmpty(message = "author Name cannot be empty.")
     @Column(name="author_name")
     private String authorName;
     
