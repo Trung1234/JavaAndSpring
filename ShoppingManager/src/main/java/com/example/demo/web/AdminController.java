@@ -5,11 +5,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.security.Principal;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -47,21 +51,29 @@ public class AdminController {
 	}
 
 	@RequestMapping(value = "save", method = RequestMethod.POST)
-	public String save(Product product, @RequestParam("file") MultipartFile file
+	public String save(@Valid @ModelAttribute("product") Product product, 
+			BindingResult bindingResult,
+			@RequestParam("file") MultipartFile file
 			, RedirectAttributes redirAttrs)
 			throws RecordNotFoundException, IOException {
-		String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
-				+ file.getOriginalFilename();
-		try {
-			FileOutputStream output = new FileOutputStream(fileLocation);
-			output.write(file.getBytes());
-			output.close();
-			product.setImagePath("/images/"+file.getOriginalFilename());
-			service.createOrUpdateProduct(product);
-		}catch(Exception ex) {
-			redirAttrs.addFlashAttribute("error", "an error happened, please contact admin.");
-		}	
-		redirAttrs.addFlashAttribute("success", "product has been created.");
+		if(!bindingResult.hasErrors()) 
+		{
+			String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
+					+ file.getOriginalFilename();
+			try {
+				FileOutputStream output = new FileOutputStream(fileLocation);
+				output.write(file.getBytes());
+				output.close();
+				product.setImagePath("/images/"+file.getOriginalFilename());
+				service.createOrUpdateProduct(product);
+				redirAttrs.addFlashAttribute("success", "product has been created.");
+			}catch(Exception ex)
+			{
+				redirAttrs.addFlashAttribute("error", "an error happened, please contact admin.");
+			}	
+		}else {
+			return "add-product";
+		}
 		return "redirect:/admin/add";
 	}
 }

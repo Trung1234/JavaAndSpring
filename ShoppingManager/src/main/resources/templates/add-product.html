@@ -37,21 +37,25 @@
                                 <label for="name" class="col-form-label">First Name</label> 
                                 <input type="text" th:field="*{name}" class="form-control" 
                                             id="name" placeholder="Name" />
+                                  
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="brand" class="col-form-label">First Name</label> 
+                                <label for="content" class="col-form-label">First Name</label> 
                                 <input type="text" th:field="*{content}" class="form-control" 
                                             id="content" placeholder="content" />
+                                 
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="authorName" class="col-form-label">First Name</label> 
+                                <label for="authorName" class="col-form-label">authorName Name</label> 
                                 <input type="text" th:field= "*{authorName}"class="form-control" 
                                             id="authorName" placeholder="authorName" />
+                                           
                             </div>
     
                             <div class="form-group col-md-8">
+                            	<label class="custom-file-label" for="customFile">Choose file</label>
                                <input type="file" class="custom-file-input" id="customFile" name="file">
-                       			<label class="custom-file-label" for="customFile">Choose file</label>
+                       			 
                             </div>
 
                             <div class="col-md-6">
@@ -61,7 +65,16 @@
                             <input type="hidden" id="id" th:field="*{id}">
     
                         </div>
-                        <div class="alert alert-primary" th:text="${success}"></div>
+                        <div class="alert alert-warning" th:if="${#fields.hasErrors('name')}" 
+                       			 th:errors="*{name}"></div>
+                        <div class="alert alert-warning" th:if="${#fields.hasErrors('content')}" 
+                       			 th:errors="*{content}"></div> 
+                        <div class="alert alert-warning" th:if="${#fields.hasErrors('imagePath')}" 
+                       			 th:errors="*{imagePath}"></div>
+                        <div class="alert alert-warning" th:if="${#fields.hasErrors('authorName')}" 
+                       			 th:errors="*{authorName}"></div> 
+                        <div class="alert alert-success" th:if= "${success != null}" th:text="${success}"></div>
+                        <div class="alert alert-danger" th:if= "${error != null}" th:text="${error}"></div>
                     </form>
                 </div>
             </div>
