@@ -65,7 +65,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				// Submit URL of login page.
 				.loginProcessingUrl("/appLogin") // Submit URL
 				.loginPage("/login")//
-				.defaultSuccessUrl("/userAccountInfo")//
+				.defaultSuccessUrl("/product/list/1?sortField=name")//
 				.failureUrl("/login?error=true")//
 				.usernameParameter("username")//
 				.passwordParameter("password")

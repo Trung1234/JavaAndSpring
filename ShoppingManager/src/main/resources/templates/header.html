@@ -17,18 +17,12 @@
 
 		<div class="v-h03 ">
 			<ul class="v-i01">
-				<li><a>Home</a></li>
-				<li><a>Pages</a></li>
-				<li class="v-out"><a>Courses</a></li>
-				<li class="v-out"><a>Portfolio</a></li>
-				<li><a>Blog</a></li>
-				<li><a>Shop</a></li>
-				<li class="v-li01"><a>Contact Us</a></li>
+				<li><a th:href="@{/admin/}">Admin</a></li>
+				<li><a th:href="@{/product/list/1?sortField=name}">Product</a></li>
+				<li><a th:href="@{/admin/add}">Add product</a></li>
+				<li class="v-li01"><a th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="v-c03">
-		<h1>Two Columns</h1>
-		<p>Home &rarr; Two columns</p>
-	</div>
+	
 </header>
