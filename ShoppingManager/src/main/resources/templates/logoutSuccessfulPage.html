@@ -1,21 +1,40 @@
-!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-   <head>
-      <title>User Info</title>
-   </head>
-   <body>
-      <!-- Include _menu.html -->
-      <th:block th:include="/_menu"></th:block>
-      
-      
-      <h2>User Info Page</h2>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Product</title>
+<link th:href="@{/styles/cssandjs/unilearn.css}" rel="stylesheet" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>	
+	<!-- Include  _header.html -->
+     <th:block th:include="header.html"></th:block>
+	<section class="mt-4 mb-4">
+		<h2>User Info Page</h2>
       <h3>Welcome :</h3>
       <b>This is protected page!</b>  
       
       <br/><br/>
       
       <div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
-      
-   </body>
-   
+	</section>
+	<!-- Include  footer.html -->
+     <th:block th:include="footer.html"></th:block>
+</body>
 </html>

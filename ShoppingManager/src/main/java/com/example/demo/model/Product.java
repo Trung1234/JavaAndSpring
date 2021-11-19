@@ -19,7 +19,6 @@ public class Product {
 	@Column(name="name")
     private String name;
 	
-	@NotEmpty(message = "imagePath cannot be empty.")
 	@Column(name="image_path")
 	private String imagePath;
 

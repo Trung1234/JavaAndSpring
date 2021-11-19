@@ -53,18 +53,26 @@ public class AdminController {
 	@RequestMapping(value = "save", method = RequestMethod.POST)
 	public String save(@Valid @ModelAttribute("product") Product product, 
 			BindingResult bindingResult,
+			Model model,
 			@RequestParam("file") MultipartFile file
 			, RedirectAttributes redirAttrs)
 			throws RecordNotFoundException, IOException {
+		//imagePath cannot be empty.			
+		product.setImagePath("/images/"+file.getOriginalFilename());
 		if(!bindingResult.hasErrors()) 
 		{
+			if(file.getOriginalFilename().equals("")) 
+			{
+				redirAttrs.addFlashAttribute("imagePathError", "imagePath cannot be empty");
+				return "add-product";
+			}
 			String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
 					+ file.getOriginalFilename();
 			try {
 				FileOutputStream output = new FileOutputStream(fileLocation);
 				output.write(file.getBytes());
 				output.close();
-				product.setImagePath("/images/"+file.getOriginalFilename());
+				//product.setImagePath("/images/"+file.getOriginalFilename());
 				service.createOrUpdateProduct(product);
 				redirAttrs.addFlashAttribute("success", "product has been created.");
 			}catch(Exception ex)
