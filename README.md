@@ -41,6 +41,7 @@
  - LIKE Queries in Spring JPA: https://www.baeldung.com/spring-jpa-like-queries
  - Validation: :https://stackabuse.com/spring-boot-thymeleaf-form-data-validation-with-bean-validator/
 ## Spring Security
+ - https://techmaster.vn/posts/36586/spring-security-authorization
  - Why you should use BCrypt to hash passwords:
       + Using a Key Factor, BCrypt is able to adjust the cost of hashing. With Key Factor changes, the hash output can be influenced. In this way, BCrypt remains extremely resistant to hacks, especially a type of password cracking called rainbow table.
 ## Tomcat issue solutions
