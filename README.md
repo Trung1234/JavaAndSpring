@@ -30,6 +30,7 @@
 ## Spring Boot
  - https://howtodoinjava.com/spring-boot-tutorials/
  - https://www.baeldung.com/spring-boot
+ - https://huongdanjava.com/vi/su-dung-liquibase-trong-spring-boot.html
  - https://mkyong.com/spring-boot/spring-boot-spring-security-thymeleaf-example/
  - Pagination: https://www.baeldung.com/spring-thymeleaf-pagination
  - Sorting : https://www.javaguides.net/2020/06/pagination-and-sorting-with-spring-boot-thymeleaf-spring-data-jpa-hibernate-mysql.html
