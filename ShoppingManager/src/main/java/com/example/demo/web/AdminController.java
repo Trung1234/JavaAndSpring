@@ -63,8 +63,8 @@ public class AdminController {
 		{
 			if(file.getOriginalFilename().equals("")) 
 			{
-				redirAttrs.addFlashAttribute("imagePathError", "imagePath cannot be empty");
-				return "add-product";
+				redirAttrs.addFlashAttribute("image", "imagePath cannot be empty");
+				return "redirect:/admin/add";
 			}
 			String fileLocation = new File("src\\main\\resources\\static\\images").getAbsolutePath() + "\\"
 					+ file.getOriginalFilename();

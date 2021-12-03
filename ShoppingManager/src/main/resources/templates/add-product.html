@@ -71,8 +71,9 @@
                        			 th:errors="*{content}"></div> 
                         <div class="alert alert-warning" th:if="${#fields.hasErrors('authorName')}" 
                        			 th:errors="*{authorName}"></div>
-                        <div class="alert alert-warning" th:if= "${imagePathError != null}"
-                       			 th:text="{imagePathError}"></div> 
+                        <div class="alert alert-warning" th:if="${image != null}"
+               				th:text="${image}">
+                       			 </div> 
                         <div class="alert alert-success" th:if= "${success != null}" th:text="${success}"></div>
                         <div class="alert alert-danger" th:if= "${error != null}" th:text="${error}"></div>
                     </form>
