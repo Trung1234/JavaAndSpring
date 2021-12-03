@@ -40,6 +40,7 @@
  - CRUD Ajax: https://loizenjs.com/spring-boot-thymeleaf-ajax-crud-example/
  - LIKE Queries in Spring JPA: https://www.baeldung.com/spring-jpa-like-queries
  - Validation: :https://stackabuse.com/spring-boot-thymeleaf-form-data-validation-with-bean-validator/
+ - Custom error page: https://www.baeldung.com/spring-boot-custom-error-page
 ## Spring Security
  - https://techmaster.vn/posts/36586/spring-security-authorization
  - Why you should use BCrypt to hash passwords:
