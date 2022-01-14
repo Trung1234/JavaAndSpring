@@ -1,0 +1,95 @@
+package com.trungnt46.quicknote.note
+abstract class QuickNote{
+	protected int maGhiChu;
+	protected String tieuDe, noiDung, thoiGianXayRa,diaDiem;
+	public void nhapTT(int maGhiChu, String tieuDe,String noiDung,
+	String thoiGian,String diaDiem){
+		// nhap thong tin cho cac thuoc tinh
+	}
+	public void inTT(){
+		// in thong tin: maGhiChu, tieuDe, noiDung, thoiGian,diaDiem;
+	}
+}
+
+
+package com.trungnt46.quicknote.notedaqua
+class NoteDaQua extends QuickNote{
+	private String tenNguoiLienQuan,  ketQuaSuViec, danhGia;
+	public void nhapTT(int maGhiChu, String tieuDe,String noiDung,
+	String thoiGianXayRa,String diaDiem,String tenNguoiLienQuan,String ketQuaSuViec,String danhGia){
+		// goi den phunog thuc nhapTT() cua lop cha
+		nhapTT(maGhiChu, tieuDe, noiDung,thoiGianXayRa, diaDiem)
+		// nhap thong tin cho cac thuoc tinh
+	}
+	
+	@Override
+	public void inTT(){
+		super.inTT();//ghi de khong hoan toan nen co super
+	}
+}	
+
+
+package com.trungnt46.quicknote.notesaptoi
+class NoteSapToi extends QuickNote{
+	private String thoiGianBaoThuc,  amThanhBaoThuc;
+	private int soLanBaoThuc;
+	private boolean xacNhanThamGia;
+	public void nhapTT(int maGhiChu, String tieuDe,String noiDung,
+	String thoiGianXayRa,String diaDiem,String thoiGianBaoThuc,int soLanBaoThuc,String amThanhBaoThuc){
+		// goi den phunog thuc nhapTT() cua lop cha
+		nhapTT(maGhiChu, tieuDe, noiDung,thoiGianXayRa, diaDiem)
+		// nhap thong tin cho cac thuoc tinh
+	}
+	 void xacNhanThamGia(boolean gTriThamGia){
+   //Gán giá trị cho thuộc tính xác nhận tham gia
+	}
+
+	public void baoThuc(){
+		//ghi de hoan toan nen khong co super
+		// neu den thoiGianBaoThuc, ghi chu keu len am thanh bao thuc 
+		// if xacNhanThamGia == true: luu lai thong tin 
+		// 	 else: khong tham gia
+	}
+	@Override
+	public void inTT(){
+		super.inTT();//ghi de khong hoan toan nen co super
+	}
+}
+
+
+package com.trungnt46.quicknote.quanlynote
+class QuanLyNote{
+	private NoteDaQua[] dsNoteDaQua;
+	private NoteSapToi[] dsNoteSapToi;
+	private void themNoteDaQua(NoteDaQua noteDaQua){
+		// them Note da qua vao danh sach
+	}
+	public void themNoteSapToi(NoteSapToi noteSapToi){
+		// them Note sap toi vao danh sach
+	}
+	public NoteDaQua timSuKienBoLo(String tieuDe,String diaDiem){
+		//tim su kien da bo lo qua tieu de va dia diem
+		return null;
+	}
+	public NoteSapToi timSuKienSaptoi(String tieuDe,String diaDiem){
+		//tim su kien sap toi qua tieu de va dia diem
+		return null;
+	}
+	public void lietKeSuKienSaoToi(){
+	
+		//nếu ghi chú nào là NoteSapToi nhưng đã xảy ra mà có xác nhận là không tham gia thì nó sẽ liệt kê ra.
+	}
+	void xoaSuKienBoLo(String maGhiChu){
+	//xoa su kien da bo lo theo maGhiChu
+}
+	void xoaSuKienSapToi(String maGhiChu){
+	//xoa su kien sap toi theo maGhiChu	
+	}
+
+	void xemGhiChu(int maGhiChu){
+   //Duyệt các ghi chú, nếu ghi chú nào có mã ghi chú trùng với tham số maGhiChu
+   //thì gọi hành vi inTT của ghi chú đó để hiển thị nội dung ghi chú
+ }
+
+	
+}

@@ -1,0 +1,87 @@
+abstract class QuickNote{
+	int maGhiChu;
+	String tieuDe, noiDung, thoiGianXayRa,diaDiem;
+	void nhapTT(int maGhiChu, String tieuDe,String noiDung,
+	String thoiGian,String diaDiem){
+		// nhap thong tin cho cac thuoc tinh
+	}
+	abstract void baoThuc();
+	void inTT(){
+		// in thong tin: maGhiChu, tieuDe, noiDung, thoiGian,diaDiem;
+	}
+}
+class NoteDaQua extends QuickNote{
+	String tenNguoiLienQuan,  ketQuaSuViec, danhGia;
+	void nhapTT(int maGhiChu, String tieuDe,String noiDung,
+	String thoiGianXayRa,String diaDiem,String tenNguoiLienQuan,String ketQuaSuViec,String danhGia){
+		// goi den phunog thuc nhapTT() cua lop cha
+		nhapTT(maGhiChu, tieuDe, noiDung,thoiGianXayRa, diaDiem)
+		// nhap thong tin cho cac thuoc tinh
+	}
+	@Override
+	void baoThuc(){
+		//ghi de hoan toan nen khong co super
+	}
+	@Override
+	void inTT(){
+		super.inTT();//ghi de khong hoan toan nen co super
+	}
+}	
+class NoteSapToi extends QuickNote{
+	String thoiGianBaoThuc,  amThanhBaoThuc;
+	int soLanBaoThuc;
+	boolean xacNhanThamGia;
+	void nhapTT(int maGhiChu, String tieuDe,String noiDung,
+	String thoiGianXayRa,String diaDiem,String thoiGianBaoThuc,int soLanBaoThuc,boolean xacNhanThamGia,String amThanhBaoThuc){
+		// goi den phunog thuc nhapTT() cua lop cha
+		nhapTT(maGhiChu, tieuDe, noiDung,thoiGianXayRa, diaDiem)
+		// nhap thong tin cho cac thuoc tinh
+	}
+	@Override
+	void baoThuc(){
+		//ghi de hoan toan nen khong co super
+		// neu den thoiGianBaoThuc, ghi chu keu len am thanh bao thuc 
+		// if xacNhanThamGia == true: luu lai thong tin 
+		// 	 else: khong tham gia
+	}
+	@Override
+	void inTT(){
+		super.inTT();//ghi de khong hoan toan nen co super
+	}
+}
+
+class QuanLyNote{
+	NoteDaQua[] dsNoteDaQua;
+	NoteSapToi[] dsNoteSapToi;
+	void themNoteDaQua(NoteDaQua noteDaQua){
+		// them Note da qua vao danh sach
+	}
+	void themNoteSapToi(NoteSapToi noteSapToi){
+		// them Note sap toi vao danh sach
+	}
+	NoteDaQua timSuKienBoLo(String tieuDe,String diaDiem){
+		//tim su kien da bo lo qua tieu de va dia diem
+		return null;
+	}
+	NoteSapToi timSuKienSaptoi(String tieuDe,String diaDiem){
+		//tim su kien sap toi qua tieu de va dia diem
+		return null;
+	}
+	void lietKeSuKienBoLo(String tieuDe,String diaDiem){
+		liet ke su kien da bo lo qua tieu de va dia diem
+		
+	}
+	void lietKeSuKienSapToi(String tieuDe,String diaDiem){
+		liet ke su kien sap toi qua tieu de va dia diem
+		
+	}
+	void xoaSuKienBoLo(String tieuDe,String diaDiem){
+		xoa su kien da bo lo qua tieu de va dia diem
+		
+	}
+	void xoaSuKienSapToi(String tieuDe,String diaDiem){
+		xoa su kien sap toi qua tieu de va dia diem
+		
+	}
+	
+}

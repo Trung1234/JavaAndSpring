@@ -1,0 +1,13 @@
+
+
+class DSSOThuanNghichDoc{
+	boolean kiemTraSoThuanNghichDoc(){
+		// if(laSoThuanNghichDoc)
+		//		return true
+		//	else
+		//		return false	
+	}
+	// duyet het so tu 100000 -->999999
+	// kiemTraSoThuanNghichDoc() == true : in ra số thỏa mãn
+	// kiemTraSoThuanNghichDoc() == false : duyet tiep vong lap
+}

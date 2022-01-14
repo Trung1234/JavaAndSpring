@@ -1,0 +1,14 @@
+class GiaiPTB2{
+	double a ,b ,c, x1, x2, x;
+	
+	void nhapHeSo(double a,double b,double c){
+		// nhập hệ số a,b,c
+	}
+	void timNghiem(){
+		// tính delta theo a,b,c
+		// Biện luận nghiệm cho 2 số x1,x2 hoặc nghiệm duy nhất x 
+	}
+	void inKetQua(){
+		// in ra nghiệm x1, x2 hoặc x
+	}
+}	

@@ -1,0 +1,43 @@
+class Truyen{
+	String tenTruyen,  tenTacGia, ngayXuatBan, noiDung;
+	int id;
+	void nhapThongTinTruyen(int id,String tenTruyen,
+	String tenTacGia,String ngayXuatBand,String noiDung){
+		// Nhập giá trị cho id, tenTruyen, tenTacGia, ngayXuatBan, noiDung
+	}
+	void xuatThôngTinTruyen(){
+		// in ra cac thuộc tính của Truyện đã nhập
+	}
+	String layNoiDungTruyen(){
+		//
+		return noiDung;
+	}
+}	
+class ChuDe{
+	int ma;
+	String tenChuDe;
+	Truyen tr1, tr2, tr3;
+	void nhapThongTinChuDe(int ma,String tenChuDe){
+		// nhập các thuộc tính ma, tenChuDe
+	}
+	void themTruyen(Truyen tr1,Truyen tr1,Truyen tr3){
+		// Gán giá trị cho từng truyện
+	}
+	void xoaTruyen(int id){
+		// if(id = idTruyen1)
+		//    xoa   	
+	}
+	void docTruyen(int id){
+		// hien thi truyen dua theo id
+	}
+}
+class QuanLy{
+	ChuDe chude1, chude2, chude3;
+	void xoaChuDe(int ma){
+		if mã chủ đè nào = ma 
+			xóa chủ đề 
+	}
+	void docTruyen(int id_truyen){
+		// hien thi truyen dua theo id_truyen
+	}
+}
