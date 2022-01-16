@@ -39,8 +39,8 @@ public class MiniMaxSum {
             add(3);
             add(4);
             add(5);
-            } };
-
+            } 
+		};
         Result.miniMaxSum(arr);
     }
 }
