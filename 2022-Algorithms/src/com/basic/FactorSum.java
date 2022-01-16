@@ -1,6 +1,6 @@
-package com.factorsum;
+package com.basic;
 
-public class Entry {
+public class FactorSum {
 	
 	public static void main(String[] args){
 		int n =24;
