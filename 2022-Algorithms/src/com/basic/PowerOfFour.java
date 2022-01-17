@@ -10,6 +10,7 @@ public class PowerOfFour {
 	    }
 	    return false;
 	}
+	
 	public static void main(String[] args)  {
         
 		System.out.println(isPowerOfFour(1099511627776L));
