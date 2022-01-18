@@ -9,19 +9,21 @@ public class MaxFraction {
 	 * @return
 	 */
 	static int maxFraction(int[] numerators, int[] denominators) {
-	    int result =0;
-	    double temp= (double) numerators[0]/denominators[0];
+		int indexMax = 0;
 	    for(int i=1;i<numerators.length;i++){
-	        if(temp < (double) numerators[i]/denominators[i]){
-	            temp = numerators[i]/denominators[i];
-	            result = i;
+	        if((numerators[indexMax]*denominators[i]-numerators[i]*denominators[indexMax])<0){
+	            indexMax = i;
 	        }
+	            
 	    }
-	    return result;
+	    return indexMax;
 	}
 	public static void main(String[] args) {
 		int[] numerators = new int[]{ 1, 2}; 
 		int[] denominators = new int[]{ 4, 3}; 
-		System.out.print(maxFraction(numerators,denominators));
+		System.out.println(maxFraction(numerators,denominators));
+		numerators = new int[]{ 1, 2, 3, 10 }; 
+		denominators = new int[]{ 1, 3, 4, 11}; 
+		System.out.println(maxFraction(numerators,denominators));
 	}
 }
