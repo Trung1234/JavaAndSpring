@@ -54,5 +54,5 @@
 - https://stackoverflow.com/questions/59549059/the-server-cannot-started-because-one-or-more-of-the-ports-are-invalid-tomcat-i
 
 ## References
-https://www.javaguides.net/p/top-java-tutorials.html
-https://tiendungtcu.wordpress.com/2015/06/30/bai-13-thao-tac-voi-ma-tran/
+ - https://www.javaguides.net/p/top-java-tutorials.html
+ - https://tiendungtcu.wordpress.com/2015/06/30/bai-13-thao-tac-voi-ma-tran/
