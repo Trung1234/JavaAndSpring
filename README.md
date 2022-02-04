@@ -1,3 +1,7 @@
+## Algorithms exercises
+ - https://github.com/Trung1234/JavaAndSpring/tree/master/2022-Algorithms
+## Management project using SpringBoot
+ - https://github.com/Trung1234/JavaAndSpring/tree/master/ShoppingManager
 ## Why Spring?
  - Spring’s flexible and comprehensive set of extensions and third-party libraries let developers build almost any application imaginable. At its core, Spring Framework’s Inversion of Control (IoC) and Dependency Injection (DI) features provide the foundation for a wide-ranging set of features and functionality. 
  - The Spring community is enormous, global, diverse, and spans folks of all ages and capabilities, from complete beginners to seasoned pros. No matter where you are on your journey, you can find the support and resources you need to get you to the next level: quickstarts, guides & tutorials, videos, meetups, support, or even formal training and certification.
