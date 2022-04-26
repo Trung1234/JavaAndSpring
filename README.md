@@ -47,6 +47,7 @@
  - Custom error page: https://www.baeldung.com/spring-boot-custom-error-page
 ## Spring Security
  - https://techmaster.vn/posts/36586/spring-security-authorization
+ - https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tutorial
  - Why you should use BCrypt to hash passwords:
       + Using a Key Factor, BCrypt is able to adjust the cost of hashing. With Key Factor changes, the hash output can be influenced. In this way, BCrypt remains extremely resistant to hacks, especially a type of password cracking called rainbow table.
 ## Tomcat issue solutions
