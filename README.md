@@ -57,3 +57,4 @@
 ## References
  - https://www.javaguides.net/p/top-java-tutorials.html
  - https://tiendungtcu.wordpress.com/2015/06/30/bai-13-thao-tac-voi-ma-tran/
+ - Java is Strictly Pass by Value!: https://tudedenkho.wordpress.com/2020/06/28/java-truyen-tham-chieu-hay-tham-tri/
